@@ -5,7 +5,7 @@ html{
     background-image: linear-gradient(black,rgb(24,24,24));
 }
 
-#box{   
+#box{ 
     background-color: rgba(146, 146, 146, 0.17);
     border-radius: 10px;
     text-align: center;
@@ -98,20 +98,33 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
     margin-right: auto;
     font-size: 1.1rem;
 }
+#upbox{
+    height: 68.7px;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+}
 
 .header{
-    text-align: left;
-    margin-left: 2vw;
-    width: 166px;
-    height: 123px;
+    text-align: center;
     display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.header img{
+    width: 80%;
+}
+
+.navbox{
+    width: 82%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
 }
 .topnav {
     overflow: hidden;
-    height: 12vh;
-    width: 80vw;
-    margin-top: 4vh;
     display: inline-block;
+    vertical-align: middle;
+
 }
   
 .topnav a {
