@@ -1,0 +1,137 @@
+@charset "UTF-8";
+html{
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(black,rgb(24,24,24));
+}
+
+#box{   
+    background-color: rgba(146, 146, 146, 0.17);
+    border-radius: 10px;
+    text-align: center;
+    height: 90vh;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20vh;
+}
+
+#login{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    padding-top: 5vh;
+}
+
+#lg{
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    padding-top: 2vh;   
+}
+
+#ID{
+    background-color: #6E6E6E;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    height: 8vh;
+    width: 25vw;
+    margin-top: 10vh;
+}
+
+#PW{
+    background-color: #6E6E6E;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    height: 8vh;
+    width: 25vw;
+    margin-top: 4vh;
+
+}
+.input{
+    background-color: #6E6E6E;
+    color: white;
+    width: 24vw;
+    height: 6.5vh;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 3px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent; }
+
+#login_button{
+    margin-top: 8vh;
+}
+
+#register_button{
+    margin-top: 3vh;
+}
+
+#non_member_login{
+    color: red;
+    font-size: 1.1rem;
+    text-align: right;
+    margin-right: 1vw;
+    padding: 0.5em 0.5em;    
+}
+
+.btn{
+    background-color: #AC58FA;
+    border-color: #AC58FA;
+    height: 8vh;
+    width: 17vw;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}
+
+.header{
+    text-align: left;
+    margin-left: 2vw;
+    width: 166px;
+    height: 123px;
+    display: inline-block;
+}
+.topnav {
+    overflow: hidden;
+    height: 12vh;
+    width: 80vw;
+    margin-top: 4vh;
+    display: inline-block;
+}
+  
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.topnav a:hover {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.topnav a.active {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
