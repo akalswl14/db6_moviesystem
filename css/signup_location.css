@@ -1,0 +1,97 @@
+@charset "UTF-8";
+html{
+    /* height: 100%; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(black,rgb(24, 24, 24));
+    font-size: 16px;
+}
+body{
+    
+}
+#upbox{
+    height: 68.7px;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+}
+
+.header{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.header img{
+    width: 80%;
+}
+
+.navbox{
+    width: 82%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.topnav {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+  
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.topnav a:hover {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.topnav a.active {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#downbox{
+    background:rgb(255, 251, 242);
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    left:0;
+    text-align: left;
+}
+.container{
+    /* display: inline-block; */
+    /* margin-left: 5vw; */
+    /* margin-top:10vh; */
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 6vh;
+}
+.container h2{
+    font-weight: 400;
+    margin-left: 1vw;
+}
+.selectbox{
+    text-align: center;
+    vertical-align: middle;
+}
+.container input{
+    margin-left: 5vw;
+    margin-right: 1vw;
+    font-size: 1.5rem;
+    position: relative;
+    top:-1vh;
+}
+.container label{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
