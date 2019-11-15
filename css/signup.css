@@ -1,0 +1,169 @@
+@charset "UTF-8";
+html{
+    /* height: 100%; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(black,rgb(24, 24, 24));
+    font-size: 16px;
+}
+body{
+    
+}
+#upbox{
+    height: 68.7px;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+}
+
+.header{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.header img{
+    width: 80%;
+}
+
+.navbox{
+    width: 82%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.topnav {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+  
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.topnav a:hover {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.topnav a.active {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#downbox{
+    background:rgb(255, 251, 242);
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    left:0;
+    text-align: center;
+}
+.container{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    text-align: center;
+}
+.container h2{
+    font-weight: 400;
+    margin-left: 1vw;
+}
+.selectbox{
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 6vh;
+    /* margin-bottom: 6vh; */
+}
+.container input[type=submit]{
+    margin-left: 1vw;
+    font-size: 1.5rem;
+    padding: 16px 48px;
+    background-color: rgb(123,82,246);
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: rgb(170, 169, 169) 0px 5px 9px 0px;
+}
+.smallselect{
+    display: inline-block;
+    width:15vw;
+    margin-bottom: 3vh;
+}
+.container select{
+    /* display: inline-block; */
+    margin-left: 2vw;
+    margin-right: 1vw;
+    font-size: 1.3rem;
+}
+.container h3{
+    font-weight: 200;
+    font-size:1.3rem;
+    display: inline-block;
+}
+
+#inputcontainer{
+    text-align: left;
+    width: 45vw;
+    display: inline-block;
+}
+#idcontainer,#pwcontainer,#namecontainer,#birthcontainer,#emailcontainer{
+    display: inline-block;
+    text-align: left;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#ID,#PW{
+    background-color: white;
+    border-radius: 10px;
+    border:0.5px solid rgb(194, 194, 194);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    height: 8vh;
+    width: 20vw;
+    margin-top: 2vh;
+}
+#email{
+    background-color: white;
+    border-radius: 10px;
+    border:0.5px solid rgb(194, 194, 194);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    height: 8vh;
+    width: 37vw;
+    margin-top: 2vh;
+}
+
+.input{
+    background-color: white;
+    color: black;
+    height: 6.5vh;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 3px;
+}
+.input[name='username'],input[name='password'],input[name='name']{
+    width: 19vw;
+}
+.input[name='email']{
+    width: 36vw;
+}
+input::placeholder {
+    color: grey;
+}
