@@ -1,0 +1,208 @@
+@charset "UTF-8";
+html{
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(black,rgb(24,24,24));
+}
+
+#box{ 
+    background-color: rgba(146, 146, 146, 0.17);
+    border-radius: 10px;
+    text-align: center;
+    height: 105vh;
+    width: 30vw; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20vh;
+}
+
+#login{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    padding-top: 5vh;
+}
+
+#lg{
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    padding-top: 3vh; 
+    margin-bottom: 0;  
+}
+.input{
+    background-color: #6E6E6E;
+    color: white;
+    height: 5vh;
+    width: 19vw;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 3px;  
+}
+
+#name,#birthday,#phonenumber,#serial_number_1,#serial_number_2{
+    display: inline-block;
+    text-align: left;
+    margin-left: 1vw;
+    margin-right: 1vw;    
+}
+
+#name_lo,#birth_lo{
+    background-color:#6E6E6E;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    height: 6vh;
+    width: 20vw;
+    margin-top: 2vh;
+}
+
+#s_lo_1,#s_lo_2{
+    background-color: #6E6E6E;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    height: 6vh;
+    width: 9vw;
+    margin-top: 2vh;    
+}
+#phone_lo{
+    height: 9vh;
+}
+
+.input_a{
+    background-color: #6E6E6E;
+    color: white;
+    height: 4vh;
+    width: 8vw;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 3px;  
+}
+ 
+.input_b{
+    background-color: #6E6E6E;
+    color: white;
+    height: 5vh;
+    width: 19vw;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 3px;  
+}
+
+.input_c{
+    background-color: #6E6E6E;
+    color: white;
+    height: 5vh;
+    width: 5.8vw;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 3px;
+    border-radius: 5px;
+  
+}
+
+#login_button{
+    margin-top: 3vh;
+}
+
+.btn{
+    background-color: #AC58FA;
+    border-color: #AC58FA;
+    height: 8vh;
+    width: 17vw;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    box-shadow: 2px 7px 2.5px 0px #1C1C1C;
+}
+
+#upbox{
+    height: 68.7px;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+}
+
+.header{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.header img{
+    width: 80%;
+}
+
+.navbox{
+    width: 82%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.topnav {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+  
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.topnav a:hover {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.topnav a.active {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#personal{
+    overflow: auto;
+    width:27vw;
+    height: 20vh;
+    text-align: left;
+    margin-left:1.75vw;
+    margin-top:2vh;
+}
+
+#check{
+    /* text-align: left;
+    margin-left:1.75vw; */
+    text-align: center;
+    margin-top:2vh;    
+}
+
+h3,p{
+    color: white;
+    margin-bottom: 0;
+}
+
+h3{
+    font-size: 1em;
+}
+
+h4{
+    font-weight: 100;
+    color: white;
+    font-size:1.3rem;
+    display: inline-block;
+}
