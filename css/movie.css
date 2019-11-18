@@ -139,7 +139,7 @@ dd{
     margin-top: 1vh;
     font-weight: 100;
 }
-.rate,.score{
+.rate,.score,.releasedate{
     display: block;
     margin-top: 0.5vh;
 }
