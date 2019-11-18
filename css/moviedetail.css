@@ -1,0 +1,149 @@
+@charset "UTF-8";
+html{
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(black,rgb(24,24,24));
+}
+
+.header{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.header img{
+    width: 80%;
+}
+
+.navbox{
+    width: 82%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.topnav {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+  
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.topnav a:hover {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.topnav a.active {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#downbox{
+    width: 80%;
+    margin:2vh auto;
+
+}
+
+#boxtitle{
+}
+#maintitle{
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+}
+hr{
+    border:1px solid #6633FF;
+}
+.basicinfo{
+    width: 100%;
+    height: auto;
+    margin: 4vh 0 0 0;
+    padding-left: 2vw;
+    padding-bottom: 4vh;
+    vertical-align: middle;
+    position: relative;
+    border-bottom: 1px solid #6633ff70;
+    box-sizing: border-box;
+}
+.poster{
+    display: inline-block;
+    width:15vw;
+    vertical-align: middle;
+    height: 100%;
+}
+.poster .img{
+    width: 15vw;
+}
+.poster .img img{
+    width: 15vw;
+}
+.discriptioninfo{
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: 5vw;
+}
+.eachrow{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 50;
+}
+.movietitle,.bookingrate,.savedpeople,.releasedate,.genre,.type,.screentype,.runtime,.director,.character{
+    display: inline-block;
+}
+.movietitle{
+    font-size: 1.8rem;
+    display: inline-block;
+    color:white;
+    margin:4vh 0 4vh 0;
+}
+#story{
+    text-align: left;
+    margin:4vh 0 0 0;
+    border-bottom: 1px solid #6633ff70;
+    box-sizing: border-box;
+    padding-left: 2vw;
+    padding-bottom: 4vh;
+}
+#storytitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 3vh;
+    color: white;
+}
+#storycontent{
+    font-size: 1.3rem;
+    line-height: 4vh;
+    color: rgba(255, 255, 255, 0.76);
+}
+#trailer{
+    text-align: left;
+    margin:4vh 0 0 0;
+    box-sizing: border-box;
+    padding-left: 2vw;
+    padding-bottom: 4vh;
+}
+#trailertitle{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 3vh;
+}
+iframe{
+    width:35vw;
+    height: 20vw;
+    border: none;
+}
