@@ -1,0 +1,112 @@
+@charset "UTF-8";
+html{
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(black,rgb(24,24,24));
+}
+
+.header{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.header img{
+    width: 80%;
+}
+
+.navbox{
+    width: 82%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.topnav {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+  
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.topnav a:hover {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.topnav a.active {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#downbox{
+    width: 80%;
+    height: 100vh;
+    margin:2vh auto;
+
+}
+li,ul{
+    list-style: none;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+
+#maintitle{
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+}
+hr{
+    border:1px solid #6633FF;
+}
+
+.deletelist hr{
+    border:0.5px solid #6633FF;
+}
+.deletelist{
+    display: block;
+    text-align: justify;
+}
+li{
+    width: 100%;
+    height: auto;
+    margin: 3vh 0 0 0;
+    /* padding-left: 2vw; */
+    /* padding-bottom: 4vh; */
+    vertical-align: middle;
+    position: relative;
+    /* border-bottom: 1px solid #6633ff70; */
+    box-sizing: border-box;
+    color: white;
+}
+
+.discription{
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: 2vw;
+}
+
+.dis_2 p,.dis_1 p{
+    color: white;
+    margin-bottom: 3vh;
+    font-size: 1.35em;
+}
+
+.option{
+    list-style: circle;
+    font-size: 1.5em;
+}
