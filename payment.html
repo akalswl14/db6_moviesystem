@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/payment.css" type="text/css">
+    <title>결제</title>
+</head>
+
+<body>
+    <div id=upbox>
+        <div class="header">
+            <img src="img/logo2.png">
+        </div>
+        <div class="navbox">
+            <div class="topnav">
+                <a href="index.html">홈</a>
+                <a href="movie.html">영화</a>
+                <a class="active" href="reserve_location.html">예매</a>
+                <a href="cine_login.html">로그인</a>
+                <a href="mycine.html">MY씨네</a>
+                <a href="#discount">할인정보</a>
+                <a href="employee_login.html">직원페이지</a>
+            </div>
+        </div>
+    </div>
+    <div id="downbox">
+        <div class="container">
+            <h1>결제선택</h1>
+            <ul id="paychoicelist">
+                <li class="menu">
+                    <div class="menutitle" onclick="eventFunction(this);">
+                        <span>관람권/할인권/쿠폰</span>
+                    </div>
+                    <div class="hide">
+                        <div class="menudetail">
+                            <div class="each-detail">
+                                <span>상품 이름</span>
+                                <input type="text" name="coupon-name" class="input" onblur="onblurEvent(this)">
+                            </div>
+                            <div class="each-detail">
+                                <span>상품 코드</span>
+                                <input type="text" name="coupon-code" class="input">
+                            </div>
+                            <div class="each-detail">
+                                <span>적용 가격</span>
+                                <input type="text" name="coupon-applyprice" class="input"onblur="couponEvent(this.value)">
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="couponprice">
+                            <div class="each-detail">
+                                <span>할인 가격</span>
+                                <span id="jsprice"> 원</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="menu">
+                    <div class="menutitle" onclick="eventFunction(this);">
+                        <span>포인트</span>
+                    </div>
+                    <div class="hide">
+                        <div class="submenutitle">
+                            씨네식스포인트
+                        </div>
+                        <hr>
+                        <div class="menudetail">
+                            <div class="each-detail">
+                                <span>보유한 포인트</span>
+                                <span id="cinepoint">점</span>
+                            </div>
+                            <div class="each-detail">
+                                <span>사용할 포인트</span>
+                                <input type="text" name="input-point" class="input" onblur="pointEvent(this)">
+                                <span>점</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu">
+                    <div class="menutitle" onclick="eventFunction(this);">
+                        <span>결제</span>
+                    </div>
+                    <div id="non-hide">
+                        <div class="submenutitle">
+                            신용카드결제
+                        </div>
+                        <hr>
+                        <div class="menudetail">
+                            <div class="each-detail">
+                                <span>카드사</span>
+                                <input type="text" name="card-company" class="input">
+                            </div>
+                            <div class="each-detail">
+                                <span>카드 번호</span>
+                                <input type="text" name="card-code" class="input">
+                            </div>
+                            <div class="each-detail">
+                                <span>이름</span>
+                                <input type="text" name="card-name" class="input">
+                            </div>
+                            <div class="each-detail">
+                                <span>CVC 코드</span>
+                                <input type="text" name="card-cvc" class="input">
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="floating">
+            <div class="floating-box" id="b1">
+                <div class="floating-title">
+                    할인내역
+                </div>
+                <div class="floating-detail">
+                    <hr>
+                    <div class="floating-detail-each">
+                        <div class="floating-detail-each-left" id="b1_left1">
+                            <span>관람권</span>
+                            <!-- <span></span> -->
+                        </div>
+                        <div class="floating-detail-each-right" id="b1_right1">
+                            <span>0 원</span>
+                        </div>
+                        <div class="floating-detail-each-left" id="b1_left2">
+                            <span>씨네식스포인트</span>
+                        </div>
+                        <div class="floating-detail-each-right" id="b1_right2">
+                            <span>0 점</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-box" id="b2">
+                <div class="floating-title">
+                    결제금액
+                </div>
+                <div class="floating-detail">
+                    <hr>
+                    <div class="floating-detail-each">
+                        <div class="floating-detail-each-left" id="b2_left">
+                            <span>신용카드</span>
+                        </div>
+                        <div class="floating-detail-each-right" id="b2_right">
+                            <span>0원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-box" id="b3">
+                <div class="floating-title">
+                    남은금액
+                </div>
+                <hr>
+                <div id="floating-remain">
+                    <span id="remainprice">12000</span>
+                    <span>원</span>
+                </div>
+            </div>
+            <div id="floating-btn">
+                <form>
+                    <input type="submit" value="결제 완료">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/payment.js"></script>
+</body>
+
+</html>

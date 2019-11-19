@@ -1,0 +1,214 @@
+@charset "UTF-8";
+html{
+    /* height: 100%; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(black,rgb(24, 24, 24)); */
+    /* background: rgb(237, 237, 237); */
+    background: rgb(243, 241, 241);
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    /* height: 100%; */
+}
+#upbox{
+    height: 86px;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+    background: black;
+    position: fixed;
+}
+
+.header{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.header img{
+    width: 80%;
+}
+
+.navbox{
+    width: 82%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.topnav {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.topnav a:hover {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.topnav a.active {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#downbox{
+    /* background:rgb(237, 237, 237);
+    min-width: 100%;
+    min-height: 100%; */
+    /* position: fixed; */
+    /* left:0; */
+    text-align: left;
+    /* position: relative; */
+    float: left;
+    margin-top:86px;
+}
+.container{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    left:0;
+}
+ul,li{
+    list-style: none;
+    padding:0;
+}
+hr{
+    margin: 0 2vw 0 2vw;
+    box-sizing: border-box;
+    border: 0.5px solid #cccccc;
+}
+#paychoicelist{
+    margin-left: 1vw;
+
+}
+.menu{
+    margin: 2vh 0 2vh 0;
+    width: 45vw;
+    border:1px solid #cccccc;
+}
+
+.menutitle{
+    line-height: 8vh;
+    background-color: #7a669950;
+}
+.menutitle span{
+    padding-left: 1vw;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+.hide{
+    display: none;
+}
+.hide,#non-hide{
+    background-color: white;
+}
+.menudetail,.submenutitle{
+    padding:1vh 4vw 1vh 2vw;
+    font-weight: 600;
+}
+#couponprice{
+    padding:0 4vw 0 2vw;
+    font-weight: 600;
+}
+.submenutitle{
+    line-height: 6vh;
+    font-weight: 600;
+}
+.hide #jsprice{
+    margin-left: 3vw;
+}
+.hide input,#non-hide input{
+    margin: 0 0.5vw 0 1vw;
+    font-size: 1.1rem;
+    width: 7vw;
+    background: rgb(249, 247, 253);
+    border: 0.5px solid #cccccc;
+}
+.menudetail{
+    margin-left:2vw;
+}
+#couponprice{
+    text-align: right;
+}
+.each-detail{
+    line-height: 6vh;
+    margin:1vh 0 1vh 0;
+}
+#floating{
+    right:22%;
+    top: 86px;
+    padding:15vh 0 0 0;
+    position: fixed;
+    margin:0;
+    /* width: 30%; */
+    box-sizing: border-box;
+}
+.floating-box,#floating-btn{
+    margin:0 0 5vh 0;
+    text-align: center;
+    width: 16vw;
+}
+.floating-box{
+    background: white;
+    border-radius: 8px;
+    box-shadow: rgba(170, 169, 169, 0.459) 0px 5px 9px 0px;
+}
+.floating-box#b1{
+    border: 5px solid #9d8fc26c;
+}
+.floating-box#b2{
+    border: 5px solid #9d8fcca2;
+}
+.floating-box#b3{
+    border: 5px solid #9d8fcce1;
+}
+.floating-title{
+    margin:1vh 0 0 0;
+    font-weight: 600;
+}
+.floating-detail,#floating-remain{
+    margin:1vh 0 1vh 0;
+    font-size: 0.9rem;
+}
+#floating hr{
+    margin-bottom: 1vh;
+}
+.floating-detail-each{
+    padding:0.5vh 2vw 0.5vh 2vw;
+    text-align: center;
+}
+.floating-detail-each-left{
+    display: inline-block;
+    width:60%;
+    text-align: left;
+}
+.floating-detail-each-right{
+    display: inline-block;
+    width:35%;
+    text-align: right;
+}
+#floating input[type=submit]{
+    font-size: 1.5rem;
+    padding: 16px 48px;
+    background-color: rgb(0,162,255);
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: rgba(170, 169, 169, 0.459) 0px 5px 9px 0px;
+}
