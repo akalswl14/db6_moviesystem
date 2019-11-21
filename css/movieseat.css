@@ -3,14 +3,18 @@ html{
     /* height: 100%; */
     /* background-size: cover; */
     background-repeat: no-repeat;
-    background-image: linear-gradient(black,rgb(24, 24, 24));
+    /* background-image: linear-gradient(black,rgb(24, 24, 24)); */
     font-size: 16px;
+    background: rgb(237, 237, 237);
 }
 
+body{ margin: 0; } 
+
 #upbox{
-    height: 68.7px;
-    vertical-align: middle;
-    margin-bottom: 3vh;
+    height: 86px; 
+    vertical-align: middle; 
+    margin-bottom: 3vh; 
+    background: black;
 }
 
 .header{
@@ -59,11 +63,11 @@ html{
 }
 
 #downbox{
-    background:rgb(237, 237, 237);
+    /* background:rgb(237, 237, 237);
     min-width: 100%;
     min-height: 100%;
     left:0;
-    position: fixed;
+    position: fixed; */
     /* text-align: left; */
 }
 
