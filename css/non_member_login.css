@@ -4,17 +4,29 @@ html{
     background-repeat: no-repeat;
     background-image: linear-gradient(black,rgb(24,24,24));
 }
-
+body{
+    margin: 0;
+}
+#upbox{
+    height: 86px;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+    background: black;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
 #box{ 
     background-color: rgba(146, 146, 146, 0.17);
     border-radius: 10px;
     text-align: center;
     height: 115vh;
     width: 30vw; 
-    margin-left: auto;
-    margin-right: auto;
     display: block;
     margin-bottom: 20vh;
+    margin:86px auto;
+    padding-top: 2vh;
 }
 
 #login{

@@ -4,7 +4,19 @@ html{
     background-repeat: no-repeat;
     background-image: linear-gradient(black,rgb(24,24,24));
 }
-
+body{
+    margin: 0;
+}
+#upbox{
+    height: 86px;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+    background: black;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
 .header{
     text-align: center;
     display: inline-block;
@@ -51,7 +63,8 @@ html{
 }
 #downbox{
     width: 80%;
-    margin:2vh auto;
+    margin:86px auto;
+    padding-top: 2vh;
 
 }
 li,ul{

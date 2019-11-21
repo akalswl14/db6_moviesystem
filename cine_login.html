@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="css/login.css">
     <title>login</title>
     <meta charset="utf-8">
 </head>
+
 <body>
-    <div id=upbox>
+    <div id="upbox">
         <div class="header">
             <a href="index.html"><img src="img/logo2.png"></a>
         </div>
@@ -21,35 +23,36 @@
                 <a href="employee_login.html">직원페이지</a>
             </div>
         </div>
-    </div>    
-        <div id="box">
-            <div id="login">로그인</div>
-                <p id="lg">아이디 비밀번호를 입력하신 후,<br> 로그인 버튼을 클릭해 주세요.</p>
-            <!-- <form action="/main" method="POST"> -->
-            <form action="main.html">
-                <div id="ID">
-                    <input type="text" name="username" class="input" placeholder="ID"><br/>
-                </div>
-                <div id="PW">
-                    <input type="password" name="password" class="input" placeholder="PW"><br/>
-                </div>
-                <div id="login_button">
-                    <input type="submit" class="btn" value="로그인">
-                </div>
-            </form>
-            <!-- <form action="/register" method="GET"> -->
-            <form action="signup.html"> <!--여기다가 회원가입 사이트 집어 넣으세요-->  
-                <div id="register_button">
-                    <!-- <button class="btn">회원가입</button> -->
-                    <input type="submit" class="btn" value="회원가입">
-                </div>
-            </form> 
-            <div id="non_member_login">
-                <a href="non_member_login.html">비회원 로그인</a>
-            </div>
-        </div>           
     </div>
-    
+    <div id="box">
+        <div id="login">로그인</div>
+        <p id="lg">아이디 비밀번호를 입력하신 후,<br> 로그인 버튼을 클릭해 주세요.</p>
+        <!-- <form action="/main" method="POST"> -->
+        <form action="main.html">
+            <div id="ID">
+                <input type="text" name="username" class="input" placeholder="ID"><br />
+            </div>
+            <div id="PW">
+                <input type="password" name="password" class="input" placeholder="PW"><br />
+            </div>
+            <div id="login_button">
+                <input type="submit" class="btn" value="로그인">
+            </div>
+        </form>
+        <!-- <form action="/register" method="GET"> -->
+        <form action="signup.html">
+            <!--여기다가 회원가입 사이트 집어 넣으세요-->
+            <div id="register_button">
+                <!-- <button class="btn">회원가입</button> -->
+                <input type="submit" class="btn" value="회원가입">
+            </div>
+        </form>
+        <div id="non_member_login">
+            <a href="non_member_login.html">비회원 로그인</a>
+        </div>
+    </div>
+    </div>
+
 </body>
 
-</html> 
+</html>

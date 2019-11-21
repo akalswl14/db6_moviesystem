@@ -4,16 +4,22 @@ html{
     /* background-size: cover; */
     background-repeat: no-repeat;
     /* background-image: linear-gradient(black,rgb(24, 24, 24)); */
+    /* background: rgb(237, 237, 237); */
+    background: rgb(243, 241, 241);
     font-size: 16px;
-    background: rgb(237, 237, 237);
 }
-body{ margin: 0; } 
-
+body{
+    margin: 0;
+    /* height: 100%; */
+}
 #upbox{
-    height: 86px; 
-    vertical-align: middle; 
-    margin-bottom: 3vh; 
+    height: 86px;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 3vh;
     background: black;
+    position: fixed;
+    top:0;
 }
 
 .header{
@@ -68,6 +74,8 @@ body{ margin: 0; }
     position: fixed;
     left:0; */
     text-align: left;
+    margin-top:86px;
+    padding-top: 1vh;
 }
 
 .container input[type=submit]{
@@ -112,11 +120,10 @@ body{ margin: 0; }
 }
 
 .title{
-    background-color: rgb(87, 65, 138);
+    background-color: rgba(87, 65, 138, 0.59);
     width:90vw;
     height:8vh;
     text-align: left;
-    opacity: 0.59;
 }
 
 .double_box{
