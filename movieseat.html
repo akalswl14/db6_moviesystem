@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/movieseat.css" type="text/css">
+    <title>상영관좌석조회</title>
+</head>
+
+<body>
+    <div id=upbox>
+        <div class="header">
+            <img src="img/logo2.png">
+        </div>
+        <div class="navbox">
+            <div class="topnav">
+                <a href="main.html">홈</a>
+                <a href="movie.html">영화</a>
+                <a class="active" href="#reserve">예매</a>
+                <a href="cine_login.html">로그인</a>
+                <a href="mycine.html">MY씨네</a>
+                <a href="#discount">할인정보</a>
+                <a href="employee_login.html">직원페이지</a>
+            </div>
+        </div>
+    </div>
+    <div id="downbox">
+        <div class="midbox">
+            <div class="container">
+                <h1 id="subject">인원/좌석 선택</h1>
+            </div>
+        </div>
+        <div class="mid_box">
+            <div class="group first">
+                <div class="box1">
+                    <div class="bo first">
+                        <h3>성인</h3>
+                    </div>
+                    <div class="bo second">
+                        <select name="adult_num">
+                            <option value="01" selected="selected">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                        </select>
+                    </div>
+                    <div class="bo third">
+                        <h3>청소년</h3>
+                    </div>
+                    <div class="bo firth">
+                        <select name="kid_num">
+                            <option value="01" selected="selected">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="bar">
+                        <h2>screen</h2>
+                    </div>
+                    <div class="seat">
+                        <div class="row">
+                            <div class="seat_val alp">A</div>
+                            <div class="seat_val num" id="a1">
+                                <span class="no">1</span>
+                            </div>
+                            <div class="seat_val num" id="a2">
+                                <span class="no">2</span>
+                            </div>
+                            <div class="seat_val num" id="a3">
+                                <span class="no">3</span>
+                            </div>
+                            <div class="seat_val num" id="a4">
+                                <span class="no">4</span>
+                            </div>
+                            <div class="seat_val num" id="a5">
+                                <span class="no">5</span>
+                            </div>
+                            <div class="seat_val num" id="a6">
+                                <span class="no">6</span>
+                            </div>
+                            <div class="seat_val num" id="a7">
+                                <span class="no">7</span>
+                            </div>
+                            <div class="seat_val num" id="a8">
+                                <span class="no">8</span>
+                            </div>
+                            <div class="seat_val num" id="a9">
+                                <span class="no">9</span>
+                            </div>
+                            <div class="seat_val num" id="a10">
+                                <span class="no">10</span>
+                            </div>
+                            <div class="seat_val num" id="a11">
+                                <span class="no">11</span>
+                            </div>
+                            <div class="seat_val num" id="a12">
+                                <span class="no">12</span>
+                            </div>
+                            <div class="seat_val num" id="a13">
+                                <span class="no">13</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="seat_val alp">B</div>
+                            <div class="seat_val num" id="b1">
+                                <span class="no">1</span>
+                            </div>
+                            <div class="seat_val num" id="b2">
+                                <span class="no">2</span>
+                            </div>
+                            <div class="seat_val num" id="b3">
+                                <span class="no">3</span>
+                            </div>
+                            <div class="seat_val num" id="b4">
+                                <span class="no">4</span>
+                            </div>
+                            <div class="seat_val num" id="b5">
+                                <span class="no">5</span>
+                            </div>
+                            <div class="seat_val num" id="b6">
+                                <span class="no">6</span>
+                            </div>
+                            <div class="seat_val num" id="b7">
+                                <span class="no">7</span>
+                            </div>
+                            <div class="seat_val num" id="b8">
+                                <span class="no">8</span>
+                            </div>
+                            <div class="seat_val num" id="b9">
+                                <span class="no">9</span>
+                            </div>
+                            <div class="seat_val num" id="b10">
+                                <span class="no">10</span>
+                            </div>
+                            <div class="seat_val num" id="b11">
+                                <span class="no">11</span>
+                            </div>
+                            <div class="seat_val num" id="b12">
+                                <span class="no">12</span>
+                            </div>
+                            <div class="seat_val num" id="b13">
+                                <span class="no">13</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="seat_val alp">C</div>
+                            <div class="seat_val num" id="c1">
+                                <span class="no">1</span>
+                            </div>
+                            <div class="seat_val num" id="c2">
+                                <span class="no">2</span>
+                            </div>
+                            <div class="seat_val num" id="c3">
+                                <span class="no">3</span>
+                            </div>
+                            <div class="seat_val num" id="c4">
+                                <span class="no">4</span>
+                            </div>
+                            <div class="seat_val num" id="c5">
+                                <span class="no">5</span>
+                            </div>
+                            <div class="seat_val num" id="c6">
+                                <span class="no">6</span>
+                            </div>
+                            <div class="seat_val num" id="c7">
+                                <span class="no">7</span>
+                            </div>
+                            <div class="seat_val num" id="c8">
+                                <span class="no">8</span>
+                            </div>
+                            <div class="seat_val num" id="c9">
+                                <span class="no">9</span>
+                            </div>
+                            <div class="seat_val num" id="c10">
+                                <span class="no">10</span>
+                            </div>
+                            <div class="seat_val num" id="c11">
+                                <span class="no">11</span>
+                            </div>
+                            <div class="seat_val num" id="c12">
+                                <span class="no">12</span>
+                            </div>
+                            <div class="seat_val num" id="c13">
+                                <span class="no">13</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="seat_val alp">D</div>
+                            <div class="seat_val num" id="d1">
+                                <span class="no">1</span>
+                            </div>
+                            <div class="seat_val num" id="d2">
+                                <span class="no">2</span>
+                            </div>
+                            <div class="seat_val num" id="d3">
+                                <span class="no">3</span>
+                            </div>
+                            <div class="seat_val num" id="d4">
+                                <span class="no">4</span>
+                            </div>
+                            <div class="seat_val num" id="d5">
+                                <span class="no">5</span>
+                            </div>
+                            <div class="seat_val num" id="d6">
+                                <span class="no">6</span>
+                            </div>
+                            <div class="seat_val num" id="d7">
+                                <span class="no">7</span>
+                            </div>
+                            <div class="seat_val num" id="d8">
+                                <span class="no">8</span>
+                            </div>
+                            <div class="seat_val num" id="d9">
+                                <span class="no">9</span>
+                            </div>
+                            <div class="seat_val num" id="d10">
+                                <span class="no">10</span>
+                            </div>
+                            <div class="seat_val num" id="d11">
+                                <span class="no">11</span>
+                            </div>
+                            <div class="seat_val num" id="d12">
+                                <span class="no">12</span>
+                            </div>
+                            <div class="seat_val num" id="d13">
+                                <span class="no">13</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="seat_val alp">E</div>
+                            <div class="seat_val num" id="e1">
+                                <span class="no">1</span>
+                            </div>
+                            <div class="seat_val num" id="e2">
+                                <span class="no">2</span>
+                            </div>
+                            <div class="seat_val num" id="e3">
+                                <span class="no">3</span>
+                            </div>
+                            <div class="seat_val num" id="e4">
+                                <span class="no">4</span>
+                            </div>
+                            <div class="seat_val num" id="e5">
+                                <span class="no">5</span>
+                            </div>
+                            <div class="seat_val num" id="e6">
+                                <span class="no">6</span>
+                            </div>
+                            <div class="seat_val num" id="e7">
+                                <span class="no">7</span>
+                            </div>
+                            <div class="seat_val num" id="e8">
+                                <span class="no">8</span>
+                            </div>
+                            <div class="seat_val num" id="e9">
+                                <span class="no">9</span>
+                            </div>
+                            <div class="seat_val num" id="e10">
+                                <span class="no">10</span>
+                            </div>
+                            <div class="seat_val num" id="e11">
+                                <span class="no">11</span>
+                            </div>
+                            <div class="seat_val num" id="e12">
+                                <span class="no">12</span>
+                            </div>
+                            <div class="seat_val num" id="e13">
+                                <span class="no">13</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="seat_val alp">F</div>
+                            <div class="seat_val num" id="f1">
+                                <span class="no">1</span>
+                            </div>
+                            <div class="seat_val num" id="f2">
+                                <span class="no">2</span>
+                            </div>
+                            <div class="seat_val num" id="f3">
+                                <span class="no">3</span>
+                            </div>
+                            <div class="seat_val num" id="f4">
+                                <span class="no">4</span>
+                            </div>
+                            <div class="seat_val num" id="f5">
+                                <span class="no">5</span>
+                            </div>
+                            <div class="seat_val num" id="f6">
+                                <span class="no">6</span>
+                            </div>
+                            <div class="seat_val num" id="f7">
+                                <span class="no">7</span>
+                            </div>
+                            <div class="seat_val num" id="f8">
+                                <span class="no">8</span>
+                            </div>
+                            <div class="seat_val num" id="f9">
+                                <span class="no">9</span>
+                            </div>
+                            <div class="seat_val num" id="f10">
+                                <span class="no">10</span>
+                            </div>
+                            <div class="seat_val num" id="f11">
+                                <span class="no">11</span>
+                            </div>
+                            <div class="seat_val num" id="f12">
+                                <span class="no">12</span>
+                            </div>
+                            <div class="seat_val num" id="f13">
+                                <span class="no">13</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="seat_val alp">G</div>
+                            <div class="seat_val num" id="g1">
+                                <span class="no">1</span>
+                            </div>
+                            <div class="seat_val num" id="g2">
+                                <span class="no">2</span>
+                            </div>
+                            <div class="seat_val num" id="g3">
+                                <span class="no">3</span>
+                            </div>
+                            <div class="seat_val num" id="g4">
+                                <span class="no">4</span>
+                            </div>
+                            <div class="seat_val num" id="g5">
+                                <span class="no">5</span>
+                            </div>
+                            <div class="seat_val num" id="g6">
+                                <span class="no">6</span>
+                            </div>
+                            <div class="seat_val num" id="g7">
+                                <span class="no">7</span>
+                            </div>
+                            <div class="seat_val num" id="g8">
+                                <span class="no">8</span>
+                            </div>
+                            <div class="seat_val num" id="g9">
+                                <span class="no">9</span>
+                            </div>
+                            <div class="seat_val num" id="g10">
+                                <span class="no">10</span>
+                            </div>
+                            <div class="seat_val num" id="g11">
+                                <span class="no">11</span>
+                            </div>
+                            <div class="seat_val num" id="g12">
+                                <span class="no">12</span>
+                            </div>
+                            <div class="seat_val num" id="g13">
+                                <span class="no">13</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="seat_val alp">H</div>
+                            <div class="seat_val num" id="h1">
+                                <span class="no">1</span>
+                            </div>
+                            <div class="seat_val num" id="h2">
+                                <span class="no">2</span>
+                            </div>
+                            <div class="seat_val num" id="h3">
+                                <span class="no">3</span>
+                            </div>
+                            <div class="seat_val num" id="h4">
+                                <span class="no">4</span>
+                            </div>
+                            <div class="seat_val num" id="h5">
+                                <span class="no">5</span>
+                            </div>
+                            <div class="seat_val num" id="h6">
+                                <span class="no">6</span>
+                            </div>
+                            <div class="seat_val num" id="h7">
+                                <span class="no">7</span>
+                            </div>
+                            <div class="seat_val num" id="h8">
+                                <span class="no">8</span>
+                            </div>
+                            <div class="seat_val num" id="h9">
+                                <span class="no">9</span>
+                            </div>
+                            <div class="seat_val num" id="h10">
+                                <span class="no">10</span>
+                            </div>
+                            <div class="seat_val num" id="h11">
+                                <span class="no">11</span>
+                            </div>
+                            <div class="seat_val num" id="h12">
+                                <span class="no">12</span>
+                            </div>
+                            <div class="seat_val num" id="h13">
+                                <span class="no">13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group second">
+                <div class="box3">
+                    <div clss="imgimg">
+                        <img src="img/poster1.png">
+                    </div>
+                    <div class="write1">
+                        <span>영화: 82년생 김지영</span></br>
+                        <span>상영일: 11월 15일</span></br>
+                        <span>상영시간: 10:25~12:25</span></br>
+                        <span>상영관: 서울대입구, 1관</span></br>
+                        <span>좌석:C8,C9</span>
+                    </div>
+                    <div class="write2">
+                        <span>가격:30000원 </span>
+                    </div>
+                    <div class="button">
+                        <form action="payment.html">
+                            <input type="submit" value="결제">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+@charset "UTF-8";
+html{
+    /* height: 100%; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(black,rgb(24, 24, 24));
+    font-size: 16px;
+}
+
+#upbox{
+    height: 68.7px;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+}
+
+.header{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17%;
+}
+.header img{
+    width: 80%;
+}
+
+.navbox{
+    width: 82%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.topnav {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+  
+.topnav a {
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+.topnav a:hover {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.topnav a.active {
+    /* 글씨 굵고 크게 */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#downbox{
+    background:rgb(237, 237, 237);
+    min-width: 100%;
+    min-height: 100%;
+    left:0;
+    position: fixed;
+    /* text-align: left; */
+}
+
+.box3 input[type=submit]{
+    margin-left: 1.5vw;
+    margin-top:3.5vh;
+    font-size: 1.35rem;
+    background-color: rgb(0,162,255);
+    width:12vw;
+    height:7vh;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: rgb(170, 169, 169) 0px 5px 9px 0px;
+}
+
+.midbox{
+    width: 77vw;
+    height: 7vh;
+    margin: 0 auto;
+    margin-top: 3vh;
+}
+
+.container {
+    width: 20vw;
+    height: 7vh;
+}
+
+.group {
+    display: inline-block;
+    vertical-align: top; 
+}
+
+.bo{
+    display: inline-block;
+    vertical-align: top;     
+}
+
+.mid_box{
+    width: 77vw;
+    margin: 0 auto;
+}
+
+.box1{
+    background-color:  rgb(148, 133, 178, 0.59);
+    width:60vw;
+    height:7vh;
+    text-align: left;
+}
+
+.bo.second,.bo.firth{
+    padding-top:2vh;
+}
+
+.box2{
+    background-color: white;
+    width:60vw;
+    height:68vh;
+    position: absolute;
+    /* text-align: center; */
+}
+
+.box1 h3{
+    padding: 15px;
+    margin: 0;
+}
+
+.bar h2{
+
+    color: white;
+    background-color:rgb(127, 84, 247, 0.3) ;
+    width:24vw;
+    height:5vh;
+    margin-left: 19vw;
+    padding-top:1vh;
+    text-align: center;
+}
+
+.bar{
+    margin-top: 7vh;
+}
+
+.box3 img{
+    width:14vw;
+    height:40vh;
+    padding: 7px;
+}
+
+.write1 span{
+    color:white;
+    padding-left: 1vw;
+    font-size: 1.1em;
+}
+
+.write2 span{
+    color:white;
+    padding-left: 7vw;
+    padding-top:1vh;
+    font-size: 1.11em;
+
+}
+
+.box3{
+    height: 75vh;
+    width: 15vw; 
+    background-color: #585858;  
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.seat_val{
+    display:inline-block;
+}
+
+.row{
+    height:4.5vh;
+    padding:3.5px;
+    margin-left: 14vw;
+}
+
+.seat_val.alp{
+    background-color:rgb(148,133,178,0.58);
+    height:4vh;
+    width:1.8vw;
+    margin-right:1vw;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.seat_val.num{
+    background-color:rgb(146,146,146);
+    height:4vh;
+    width:1.8vw;
+    font-size:1.3em;
+    text-align: center; 
+    margin-right: 0.15vw; 
+}
+
+.ex.ex2 span{
+    color:white;
+}
+
+/* .row{
+    height:15px;
+    line-height:15px;
+} */
+
+.label{
+    /* left: 0px;
+    margin-bottom: 1px;
+    width: 15px;
+    height: 14px;
+    line-height: 14px;
+    border-top: 1px solid #d4d3c9;
+    font-size: 11px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-align: center; */
+}
+
+a{
+    /* display: block;
+    height: 100%;
+    cursor: pointer;
+    letter-spacing: -1px; */
+}
+
+.no{
+    /* width: 11px;
+    height: 11px;
+    line-height: 11px;
+    border: solid 2px #ed8c00; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
