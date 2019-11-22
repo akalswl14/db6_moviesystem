@@ -124,7 +124,10 @@ body{
     margin-left: 1vw;
     margin-right: 1vw;
 }
-
+#submitcontainer{
+    text-align: center;
+    margin: 5vh 0 3vh 0;
+}
 #ID,#PW{
     background-color: white;
     border-radius: 10px;

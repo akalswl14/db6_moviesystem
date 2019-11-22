@@ -71,6 +71,10 @@ body{ margin: 0; }
     /* text-align: left; */
 }
 
+select{
+    font-size: 1rem;
+}
+
 .box3 input[type=submit]{
     margin-left: 1.5vw;
     margin-top:3.5vh;
@@ -104,7 +108,7 @@ body{ margin: 0; }
 
 .bo{
     display: inline-block;
-    vertical-align: top;     
+    /* vertical-align: top;      */
 }
 
 .mid_box{
@@ -120,7 +124,6 @@ body{ margin: 0; }
 }
 
 .bo.second,.bo.firth{
-    padding-top:2vh;
 }
 
 .box2{
@@ -185,6 +188,7 @@ a{
 
 .seat_val{
     display:inline-block;
+    line-height: 1.5em; 
 }
 
 .row{
@@ -208,7 +212,7 @@ a{
     width:1.8vw;
     font-size:1.3em;
     text-align: center; 
-    margin-right: 0.15vw; 
+    margin-right: 0.15vw;
 }
 
 .ex.ex2 span{

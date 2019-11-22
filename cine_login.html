@@ -28,12 +28,12 @@
         <div id="login">로그인</div>
         <p id="lg">아이디 비밀번호를 입력하신 후,<br> 로그인 버튼을 클릭해 주세요.</p>
         <!-- <form action="/main" method="POST"> -->
-        <form action="main.html">
+        <form action="index.html">
             <div id="ID">
-                <input type="text" name="username" class="input" placeholder="ID"><br />
+                <input type="text" name="username" class="input" placeholder="ID" required><br />
             </div>
             <div id="PW">
-                <input type="password" name="password" class="input" placeholder="PW"><br />
+                <input type="password" name="password" class="input" placeholder="PW" required><br />
             </div>
             <div id="login_button">
                 <input type="submit" class="btn" value="로그인">
@@ -50,7 +50,6 @@
         <div id="non_member_login">
             <a href="non_member_login.html">비회원 로그인</a>
         </div>
-    </div>
     </div>
 
 </body>

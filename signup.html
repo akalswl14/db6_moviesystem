@@ -26,31 +26,31 @@
     <div id="downbox">
         <div class="container">
             <h1>지금, 씨네식스에 가입하세요!</h1>
-            <div id="inputcontainer">
+            <form actio="index.html" id="inputcontainer">
                 <div id="idcontainer">
                     <h2>ID</h2>
                     <div id="ID">
-                        <input type="text" name="username" class="input" placeholder="ID"><br />
+                        <input type="text" name="username" class="input" placeholder="ID" required><br />
                     </div>
                 </div>
                 <div id="pwcontainer">
                     <h2>PW</h2>
                     <div id="PW">
-                        <input type="password" name="password" class="input" placeholder="PW"><br />
+                        <input type="password" name="password" class="input" placeholder="PW" required><br />
                     </div>
                 </div>
                 <br>
                 <div id="emailcontainer">
                     <h2>이메일</h2>
                     <div id="email">
-                        <input type="text" name="email" class="input" placeholder="EMAIL"><br />
+                        <input type="text" name="email" class="input" placeholder="EMAIL" required><br />
                     </div>
                 </div>
                 <br>
                 <div id="namecontainer">
                     <h2>이름</h2>
                     <div id="ID">
-                        <input type="text" name="name" class="input" placeholder="NAME"><br />
+                        <input type="text" name="name" class="input" placeholder="NAME" required><br />
                     </div>
                 </div>
                 <div id="birthcontainer">
@@ -107,14 +107,9 @@
                     </select>
                     <h3>일</h3>
                 </div>
-            </div>
-
-
-        </div>
-        <div class="container">
-            <!-- <form action="/main" method="POST"> -->
-            <form action="main.html">
-                <input type="submit" value="회원가입">
+                <div id="submitcontainer">
+                    <input type="submit" value="회원가입">
+                </div>
             </form>
         </div>
     </div>
