@@ -74,7 +74,7 @@ body{
     position: fixed;
     left:0; */
     text-align: left;
-    margin-top:86px;
+    margin-top:201px;
     padding-top: 1vh;
 }
 
@@ -88,6 +88,8 @@ body{
     text-decoration: none;
     cursor: pointer;
     box-shadow: rgb(170, 169, 169) 0px 5px 9px 0px;
+    position: absolute;
+    right:0;
 }
 
 .midbox{
@@ -95,10 +97,11 @@ body{
     height: 13vh;
     margin: 0 auto;
     margin-top: 3vh;
+    position: relative;
 }
 
 .container {
-    width: 20vw;
+    /* width: 20vw; */
     height: 14vh;
     display: inline-block;
     vertical-align: top; 
@@ -114,11 +117,28 @@ body{
     padding: 4px;
 }
 
-.mid_box{
+#branch{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#date{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.mid_box,#title_downbox{
     width: 90vw;
     margin: 0 auto;
 }
 
+#title_downbox{
+    position: fixed;
+    top:86px;
+    height: 115px;
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+    background: white;
+}
 .title{
     background-color: rgba(87, 65, 138, 0.59);
     width:90vw;
