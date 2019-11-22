@@ -66,7 +66,7 @@
                     <div class="seat">
                         <div class="row">
                             <div class="seat_val alp">A</div>
-                            <div class="seat_val num" id="a1">
+                            <div class="seat_val num" id="a1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
                             <div class="seat_val num" id="a2">
@@ -98,12 +98,6 @@
                             </div>
                             <div class="seat_val num" id="a11">
                                 <span class="no">11</span>
-                            </div>
-                            <div class="seat_val num" id="a12">
-                                <span class="no">12</span>
-                            </div>
-                            <div class="seat_val num" id="a13">
-                                <span class="no">13</span>
                             </div>
                         </div>
                         <div class="row">
@@ -141,12 +135,6 @@
                             <div class="seat_val num" id="b11">
                                 <span class="no">11</span>
                             </div>
-                            <div class="seat_val num" id="b12">
-                                <span class="no">12</span>
-                            </div>
-                            <div class="seat_val num" id="b13">
-                                <span class="no">13</span>
-                            </div>
                         </div>
                         <div class="row">
                             <div class="seat_val alp">C</div>
@@ -182,12 +170,6 @@
                             </div>
                             <div class="seat_val num" id="c11">
                                 <span class="no">11</span>
-                            </div>
-                            <div class="seat_val num" id="c12">
-                                <span class="no">12</span>
-                            </div>
-                            <div class="seat_val num" id="c13">
-                                <span class="no">13</span>
                             </div>
                         </div>
                         <div class="row">
@@ -225,12 +207,6 @@
                             <div class="seat_val num" id="d11">
                                 <span class="no">11</span>
                             </div>
-                            <div class="seat_val num" id="d12">
-                                <span class="no">12</span>
-                            </div>
-                            <div class="seat_val num" id="d13">
-                                <span class="no">13</span>
-                            </div>
                         </div>
                         <div class="row">
                             <div class="seat_val alp">E</div>
@@ -266,12 +242,6 @@
                             </div>
                             <div class="seat_val num" id="e11">
                                 <span class="no">11</span>
-                            </div>
-                            <div class="seat_val num" id="e12">
-                                <span class="no">12</span>
-                            </div>
-                            <div class="seat_val num" id="e13">
-                                <span class="no">13</span>
                             </div>
                         </div>
                         <div class="row">
@@ -309,12 +279,6 @@
                             <div class="seat_val num" id="f11">
                                 <span class="no">11</span>
                             </div>
-                            <div class="seat_val num" id="f12">
-                                <span class="no">12</span>
-                            </div>
-                            <div class="seat_val num" id="f13">
-                                <span class="no">13</span>
-                            </div>
                         </div>
                         <div class="row">
                             <div class="seat_val alp">G</div>
@@ -350,12 +314,6 @@
                             </div>
                             <div class="seat_val num" id="g11">
                                 <span class="no">11</span>
-                            </div>
-                            <div class="seat_val num" id="g12">
-                                <span class="no">12</span>
-                            </div>
-                            <div class="seat_val num" id="g13">
-                                <span class="no">13</span>
                             </div>
                         </div>
                         <div class="row">
@@ -393,12 +351,6 @@
                             <div class="seat_val num" id="h11">
                                 <span class="no">11</span>
                             </div>
-                            <div class="seat_val num" id="h12">
-                                <span class="no">12</span>
-                            </div>
-                            <div class="seat_val num" id="h13">
-                                <span class="no">13</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -413,7 +365,8 @@
                         <span>상영일: 11월 15일</span></br>
                         <span>상영시간: 10:25~12:25</span></br>
                         <span>상영관: 서울대입구, 1관</span></br>
-                        <span>좌석:C8,C9</span>
+                        <span>좌석:</span>
+                        <span id ="seatchoice"></span>
                     </div>
                     <div class="write2">
                         <span>가격:30000원 </span>

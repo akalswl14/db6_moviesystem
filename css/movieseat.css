@@ -209,10 +209,15 @@ a{
 .seat_val.num{
     background-color:rgb(146,146,146);
     height:4vh;
-    width:1.8vw;
+    width:4vh;
     font-size:1.3em;
     text-align: center; 
     margin-right: 0.15vw;
+}
+
+.seat_val.num:hover{
+    background-color:rgba(87, 53, 87, 0.883);
+    color: white;
 }
 
 .ex.ex2 span{
