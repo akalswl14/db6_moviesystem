@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/snack_manage.css" type="text/css">
-    <title>매점관리</title>
+    <link rel="stylesheet" href="css/equipment_detail.css" type="text/css">
+    <title>장비시설</title>
 </head>
 
 <body>
@@ -22,17 +22,17 @@
                             <div class="nav_item"><span class="nav_link">나의 근무상황</span></div>
                         </div>
                     </li>
-                    <li class="nemo" onclick="location.href='snack_manage.html';">
+                    <li class="nemo_diff" onclick="location.href='snack_manage.html';">
                         <div class="line">
-                            <img src="img/snack.png">
+                            <img src="img/snack_gray.png">
                         </div>
                         <div class="line">
                             <div class="nav_item"><span class="nav_link">매점 관리</span></div>
                         </div>
                     </li>
-                    <li class="nemo_diff" onclick="location.href='equipment_detail.html'">
+                    <li class="nemo" onclick="location.href='equipment_detail'">
                         <div class="line">
-                            <img src="img/list_gray.png">
+                            <img src="img/list.png">
                         </div>
                         <div class="line">
                             <div class="nav_item"><span class="nav_link">장비 내역</span></div>
@@ -51,7 +51,7 @@
         </div>
         <div id="upbox">
             <div class="container first">
-                <h1 id="recent_work">매점 관리</h1>
+                <h1 id="recent_work">장비 내역</h1>
             </div>
             <div class="container second">
                 <a href="employee_login.html">로그아웃</a>
@@ -63,70 +63,51 @@
         <div id="downbox">
             <div class="downcontainer">
                 <div class="title_downcontainer">
-                    <span>상품 조회</span>
+                    <span>장비 조회</span>
                 </div>
                 <div class="input_search">
-                    <span>상품번호 :</span>
+                    <span>개별번호 :</span>
                     <form>
                         <input type="text" id="productcode">
                         <input type="submit" value="조회">
                     </form>
                 </div>
                 <table>
-                    <th>상품명</th>
-                    <th>잔여 재고</th>
-                    <th>가격(원)</th>
+                    <th>상품번호</th>
+                    <th>이름</th>
+                    <th>개별번호</th>
+                    <th>상태</th>
+                    <th>구입일</th>
+                    <th>위치</th>
                     <tr>
                         <!-- 첫번째 줄 시작 -->
-                        <td>팝콘</td>
-                        <td>10</td>
-                        <td>5000</td>
+                        <td>1000</td>
+                        <td>컵</td>
+                        <td>1</td>
+                        <td>상</td>
+                        <td>2019.11.12</td>
+                        <td>창고</td>
                     </tr><!-- 첫번째 줄 끝 -->
                     <tr>
                         <!-- 두번째 줄 시작 -->
-                        <td>팝콘</td>
-                        <td>10</td>
-                        <td>5000</td>
+                        <td>1000</td>
+                        <td>의자</td>
+                        <td>2</td>
+                        <td>하</td>
+                        <td>2019.11.12</td>
+                        <td>마케팅1팀</td>
                     </tr><!-- 두번째 줄 끝 -->
+                    <tr>
+                        <!-- 셋째 줄 시작 -->
+                        <td>1000</td>
+                        <td>모티커</td>
+                        <td>19</td>
+                        <td>중</td>
+                        <td>2019.11.12</td>
+                        <td>관리팀</td>
+                    </tr><!-- 셋째 줄 끝 -->
                 </table>
             </div>
-            <div class="downcontainer">
-                    <div class="title_downcontainer">
-                        <span>판매 기록</span>
-                    </div>
-                    <div class="input_search">
-                        <span>날짜 :</span>
-                        <form>
-                            <input type="text" id='inputyear'>
-                            <span>년</span>
-                            <input type="text" id="inputmonth">
-                            <span>월</span>
-                            <input type="text" id="inputday">
-                            <span>일</span>
-                            <input type="submit" value="조회">
-                        </form>
-                    </div>
-                    <table>
-                        <th>상품명</th>
-                        <th>판매</th>
-                        <th>교환</th>
-                        <th>환불</th>
-                        <tr>
-                            <!-- 첫번째 줄 시작 -->
-                            <td>팝콘</td>
-                            <td>10</td>
-                            <td>3</td>
-                            <td>2</td>
-                        </tr><!-- 첫번째 줄 끝 -->
-                        <tr>
-                            <!-- 두번째 줄 시작 -->
-                            <td>팝콘</td>
-                            <td>10</td>
-                            <td>3</td>
-                            <td>2</td>
-                        </tr><!-- 두번째 줄 끝 -->
-                    </table>
-                </div>
         </div>
     </div>
 </body>

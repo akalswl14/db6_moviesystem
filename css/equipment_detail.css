@@ -1,0 +1,146 @@
+#leftbox{
+    width: 17.5vw;
+    height:100vh;
+    float: left;
+    background-color: black;
+    position:fixed;
+}
+#downbox{
+    width: 82.5vw;
+    height:107vh;
+    float: right;
+    background-color:  rgb(237, 237, 237);
+}
+.nemo{
+    background-color: #2E2E2E;
+    width: 17.5vw;
+    height: 9vh;
+    color: white;
+}
+#upbox{
+    width: 82.5vw;
+    height:13vh;
+    float: right;
+    background-color:  white;
+}
+#main_container{
+    width: 100vw;
+    height:120vh;
+    margin: 0;
+}
+.header{
+    text-align: center;
+    display: block;
+    width: 17.5vw;
+}
+.header img{
+    width: 90%;
+}
+.nav{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.nav_list{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    color: gray;
+}
+.nav_list img{
+    width:30px;
+    height:30px;
+}
+.nav_link{
+    text-decoration: none;
+    display: block;
+}
+.nav_item{
+    height: 8vh;
+    font-size: 1.5em;
+    padding-top:5px;
+    line-height: 8vh;
+}
+.container {
+    width: 13vw;
+    display: inline-block;
+}
+.container a{
+    text-decoration: none;
+    color: gray;
+}
+.container.first{
+    margin-left:2vw;
+    margin-top:0.5vh;
+}
+.container.second{
+    text-align: right;
+    margin-left:38vw;
+}
+.container.third{
+    text-align: left;
+    padding-left: 1.7vw;
+}
+body{
+    margin:0;
+}
+
+.line{
+    display: inline-block;
+    margin : 0 0.5vw 0 0.5vw;   
+}
+.nemo_diff:hover{
+    background-color:white;
+}
+.downcontainer{
+    padding-left: 3vw;
+    margin: 5vh 0 1vh 0;
+}
+.title_downcontainer{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.input_search{
+    margin:1vw 0 1vh 1vw;
+    font-size: 1.2rem;
+}
+
+form{
+    display: inline-block;
+}
+
+input{
+    margin: 0 0.5vw 0 1vw;
+    font-size: 1.1rem;
+    background: rgb(249, 247, 253);
+    border: 0.5px solid #cccccc;
+}
+#productcode{
+    width: 12vw;
+}
+
+input[type="submit"]{
+    width: 4.5vw;
+    color: rgb(93, 93, 93);
+}
+
+table{
+    margin:1vw 0 1vh 1vw;
+    border-collapse: collapse;
+    border: 0.5px solid rgba(148, 148, 148, 0.486);
+    text-align: center;
+    background-color: white;
+}
+table hr{
+    margin: 0 1vw 0 1vw;
+    box-sizing: border-box;
+    border: 0.5px solid #cccccc;
+    width: 100%d;
+}
+th{
+    border-bottom: 1px solid #ddd;
+    padding:2vh 4.5vw 2vh 5vw;
+    margin: 0 1vw 0 1vw;
+}
+td{
+    padding:1vh 3.5vw 1vh 4vw;
+}
