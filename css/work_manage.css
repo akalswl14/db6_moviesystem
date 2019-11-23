@@ -15,6 +15,7 @@
     background-color: #2E2E2E;
     width: 17.5vw;
     height: 9vh;
+    color: white;
 }
 #upbox{
     width: 82.5vw;
@@ -43,6 +44,7 @@
     list-style: none;
     padding-left: 0;
     text-align: center;
+    color: gray;
 }
 .nav_list img{
     width:30px;
@@ -51,10 +53,6 @@
 .nav_link{
     text-decoration: none;
     display: block;
-    color: gray;
-}
-.nav_item.item1 .nav_link{
-    color:white;
 }
 .nav_item{
     height: 8vh;
@@ -84,10 +82,6 @@
 }
 body{
     margin:0;
-}
-.nav_item.item1{
-    height:8vh;
-    /* background-color:#2E2E2E; */
 }
 .month{
     display: inline-block;
@@ -248,7 +242,8 @@ hr{
     width: 7vw;
 }
 .line{
-    display: inline-block;   
+    display: inline-block;
+    margin : 0 0.5vw 0 0.5vw;   
 }
 .nemo_diff:hover{
     background-color:white;
