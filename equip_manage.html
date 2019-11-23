@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/equip_manage.css" type="text/css">
+    <title>장비관리</title>
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="leftbox">
+            <div class="header">
+                <a href="index.html"><img src="img/logo2.png"></a>
+            </div>
+            <div class="nav">
+                <ul class="nav_list">
+                    <li class="nemo_diff" onclick="location.href='work_manage.html';">
+                        <div class="line">
+                            <img src="img/home_gray.png">
+                        </div>
+                        <div class="line">
+                            <div class="nav_item"><span class="nav_link">나의 근무상황</span></div>
+                        </div>
+                    </li>
+                    <li class="nemo_diff" onclick="location.href='snack_manage.html';">
+                        <div class="line">
+                            <img src="img/snack_gray.png">
+                        </div>
+                        <div class="line">
+                            <div class="nav_item"><span class="nav_link">매점 관리</span></div>
+                        </div>
+                    </li>
+                    <li class="nemo_diff" onclick="location.href='equipment_detail.html'">
+                        <div class="line">
+                            <img src="img/list_gray.png">
+                        </div>
+                        <div class="line">
+                            <div class="nav_item"><span class="nav_link">장비 내역</span></div>
+                        </div>
+                    </li>
+                    <li class="nemo" onclick="location.href='equip_manage.html'">
+                        <div class="line">
+                            <img src="img/hammer.png">
+                        </div>
+                        <div class="line">
+                            <div class="nav_item"><span class="nav_link">장비 관리</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="upbox">
+            <div class="container first">
+                <h1 id="recent_work">장비 관리</h1>
+            </div>
+            <div class="container second">
+                <a href="employee_login.html">로그아웃</a>
+            </div>
+            <div class="container third">
+                <a href="index.html">영화예매페이지로 이동</a>
+            </div>
+        </div>
+        <div id="downbox">
+            <div class="downcontainer">
+                <div class="title_downcontainer">
+                    <span>수리 신청</span>
+                </div>
+                <div class="input_search">
+                    <div class="cover">
+                        <div class="contain">
+                            <span>부서 번호 :</span>
+                            <form>
+                                <input type="text" id="repair_partnum">
+                            </form>
+                        </div>
+                        <div class="contain">
+                            <span>개별 번호 :</span>
+                            <form>
+                                <input type="text" id="repair_individiaulnum">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <div class="btn">
+                            <form>
+                                <input type="submit" value="신청">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="downcontainer">
+                <div class="title_downcontainer">
+                    <span>폐기 신청</span>
+                </div>
+                <div class="input_search">
+                    <div class="cover">
+                        <div class="contain">
+                            <span>부서 번호 :</span>
+                            <form>
+                                <input type="text" id="discard_partnum">
+                            </form>
+                        </div>
+                        <div class="contain">
+                            <span>개별 번호 :</span>
+                            <form>
+                                <input type="text" id="discard_individiaulnum">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <div class="btn">
+                            <form>
+                                <input type="submit" value="신청">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="downcontainer">
+                <div class="title_downcontainer">
+                    <span>발주 신청</span>
+                </div>
+                <div class="input_search">
+                    <div class="cover">
+                        <div class="contain">
+                            <span>부서 번호 :</span>
+                            <form>
+                                <input type="text" id="send_partnum">
+                            </form>
+                        </div>
+                        <div class="contain">
+                            <span>상품 번호 :</span>
+                            <form>
+                                <input type="text" id="send_individiaulnum">
+                            </form>
+                        </div>
+                        <div class="contain">
+                            <span>수량 :</span>
+                            <form>
+                                <input type="text" id="send_num">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <div class="btn">
+                            <form>
+                                <input type="submit" value="신청">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
