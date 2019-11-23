@@ -94,6 +94,7 @@ body{
 .downcontainer{
     padding-left: 3vw;
     margin: 5vh 0 1vh 0;
+    padding-right: 3vw;
 }
 .title_downcontainer{
     font-size: 1.5rem;
@@ -126,7 +127,6 @@ input[type="submit"]{
 table{
     margin:1vw 0 1vh 1vw;
     border-collapse: collapse;
-    border: 0.5px solid rgba(148, 148, 148, 0.486);
     text-align: center;
     background-color: white;
 }
@@ -143,4 +143,10 @@ th{
 }
 td{
     padding:1vh 3.5vw 1vh 4vw;
+}
+
+.wrap{
+    background: white;
+    border: 0.5px solid rgba(148, 148, 148, 0.486);
+    box-shadow: 2px 2px 4px #848484;
 }

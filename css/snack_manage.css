@@ -91,10 +91,17 @@ body{
 .nemo_diff:hover{
     background-color:white;
 }
-.downcontainer{
+.downcontainer.first{
     padding-left: 3vw;
     margin: 5vh 0 1vh 0;
+    padding-right: 45vw;
 }
+.downcontainer.second{
+    padding-left: 3vw;
+    margin: 5vh 0 1vh 0;
+    padding-right: 40vw;
+}
+
 .title_downcontainer{
     font-size: 1.5rem;
     font-weight: bold;
@@ -132,7 +139,6 @@ input[type="submit"]{
 table{
     margin:1vw 0 1vh 1vw;
     border-collapse: collapse;
-    border: 0.5px solid rgba(148, 148, 148, 0.486);
     text-align: center;
     background-color: white;
 }
@@ -144,9 +150,15 @@ table hr{
 }
 th{
     border-bottom: 1px solid #ddd;
-    padding:2vh 2vw 2vh 2vw;
+    padding:2vh 3.5vw 2vh 3.5vw;
     margin: 0 1vw 0 1vw;
 }
 td{
     padding:1vh 2vw 1vh 2vw;
+}
+
+.wrap{
+    background: white;
+    border: 0.5px solid rgba(148, 148, 148, 0.486);
+    box-shadow: 2px 2px 4px #848484;
 }
