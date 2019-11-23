@@ -31,9 +31,9 @@
             </div>
         </div>
         <hr>
-        <ul class="deletelist">
+        <ul id="deletelist">
             <li>
-                <div class="discription">
+                <div id="discription">
                     <ul>
                         <li class="option">유의사항</li>
                         <div class="dis_1">
@@ -49,7 +49,7 @@
                 <div class="discription">
                     <ul>
                         <li class="option">유의사항</li>
-                        <div class="dis_2">
+                        <div class="dis_1">
                             <p>1) 예매하신 내역을 취소하시려면 [마이씨네]에서 [예매취소버튼]을 눌러주십시오.</br>
                             2) 회원인 경우에는 로그인을 해주시고 비회원인 경우에는 비회원 예매시 입력했던 개인정보와 동일하게 입력해주세요.</br>
                             3) 예매하신 내역의 영화제목 오른쪽에 있는 [예매취소] 버튼을 눌러주시면 바로 취소 처리됩니다.</p>
@@ -58,6 +58,15 @@
                 </div>
             </li>
         </ul>
+        <form action="final_delete.html">
+            <div id="check">
+                <input type="checkbox" name="agree" value="agreement" required>
+                <font color="white">정말로 예매를 취소하시겠습니까?</font>
+            </div>
+            <div id="delete_button">
+                <input type="submit" class="btn" value="예매취소">
+            </div>
+        </form>
     </div>
     </div>
 

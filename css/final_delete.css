@@ -68,6 +68,9 @@ body{
     padding-top: 2vh;
 
 }
+#boxtitle{
+    text-align: center;
+}
 li,ul{
     list-style: none;
     padding:0;
@@ -79,14 +82,10 @@ a{
 #maintitle{
     display: inline-block;
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 hr{
     border:1px solid #6633FF;
-}
-
-#deletelist hr{
-    border:0.5px solid #6633FF;
 }
 #deletelist{
     display: block;
@@ -96,11 +95,8 @@ li{
     width: 100%;
     height: auto;
     margin: 3vh 0 0 0;
-    /* padding-left: 2vw; */
-    /* padding-bottom: 4vh; */
     vertical-align: middle;
     position: relative;
-    /* border-bottom: 1px solid #6633ff70; */
     box-sizing: border-box;
     color: white;
 }
@@ -113,34 +109,14 @@ li{
     margin-left: 2vw;
 }
 
-.dis_1 p{
+#dis_1 p{
     color: white;
     margin-bottom: 3vh;
     font-size: 1.35em;
 }
 
-.option{
+#option{
     list-style: circle;
     font-size: 1.5em;
 }
 
-.btn{
-    background-color: #AC58FA;
-    border-color: #AC58FA;
-    height: 8vh;
-    width: 17vw;
-    color: white;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 2rem;
-    box-shadow: 2px 7px 2.5px 0px #1C1C1C;
-}
-#check{
-    margin-top: 5vh;
-    text-align: center;
-}
-#delete_button{
-    margin-top: 2vh;
-    text-align: center;
-}
