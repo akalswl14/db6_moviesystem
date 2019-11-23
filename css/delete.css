@@ -123,3 +123,24 @@ li{
     list-style: circle;
     font-size: 1.5em;
 }
+
+.btn{
+    background-color: #AC58FA;
+    border-color: #AC58FA;
+    height: 8vh;
+    width: 17vw;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    box-shadow: 2px 7px 2.5px 0px #1C1C1C;
+}
+#check{
+    margin-top: 5vh;
+    text-align: center;
+}
+#delete_button{
+    margin-top: 2vh;
+    text-align: center;
+}
