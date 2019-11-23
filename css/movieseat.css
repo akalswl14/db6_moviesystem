@@ -62,15 +62,6 @@ body{ margin: 0; }
     font-size: 1.5rem;
 }
 
-#downbox{
-    /* background:rgb(237, 237, 237);
-    min-width: 100%;
-    min-height: 100%;
-    left:0;
-    position: fixed; */
-    /* text-align: left; */
-}
-
 select{
     font-size: 1rem;
 }
@@ -108,7 +99,6 @@ select{
 
 .bo{
     display: inline-block;
-    /* vertical-align: top;      */
 }
 
 .mid_box{
@@ -129,9 +119,8 @@ select{
 .box2{
     background-color: white;
     width:60vw;
-    height:68vh;
+    height:74vh;
     position: absolute;
-    /* text-align: center; */
 }
 
 .box1 h3{
@@ -160,22 +149,25 @@ select{
     padding: 7px;
 }
 
-.write1 span{
+#write1 span{
+    display: inline-block;
     color:white;
-    padding-left: 1vw;
     font-size: 1.1em;
+    padding:0.5vh 0 0.5vh 1vw;
 }
 
-.write2 span{
+#write2{
+    text-align: right;
+    padding-right: 1vw;
+}
+#write2 span{
     color:white;
-    padding-left: 7vw;
     padding-top:1vh;
     font-size: 1.11em;
-
 }
 
 .box3{
-    height: 75vh;
+    height: 81vh;
     width: 15vw; 
     background-color: #585858;  
     
@@ -186,7 +178,7 @@ a{
     color: black;
 }
 
-.seat_val{
+.seat_val_alp,.seat_val_num,.seat_val_num_selected{
     display:inline-block;
     line-height: 1.5em; 
 }
@@ -197,7 +189,7 @@ a{
     margin-left: 14vw;
 }
 
-.seat_val.alp{
+.seat_val_alp{
     background-color:rgb(148,133,178,0.58);
     height:4vh;
     width:1.8vw;
@@ -206,7 +198,7 @@ a{
     text-align: center;
 }
 
-.seat_val.num{
+.seat_val_num{
     background-color:rgb(146,146,146);
     height:4vh;
     width:4vh;
@@ -215,45 +207,23 @@ a{
     margin-right: 0.15vw;
 }
 
-.seat_val.num:hover{
+.seat_val_num:hover{
     background-color:rgba(87, 53, 87, 0.883);
     color: white;
 }
 
+.seat_val_num_selected{
+    background-color:rgba(87, 53, 87, 0.883);
+    color: white;
+    height:4vh;
+    width:4vh;
+    font-size:1.3em;
+    text-align: center; 
+    margin-right: 0.15vw;
+}
+
 .ex.ex2 span{
     color:white;
-}
-
-/* .row{
-    height:15px;
-    line-height:15px;
-} */
-
-.label{
-    /* left: 0px;
-    margin-bottom: 1px;
-    width: 15px;
-    height: 14px;
-    line-height: 14px;
-    border-top: 1px solid #d4d3c9;
-    font-size: 11px;
-    font-family: Verdana;
-    font-weight: bold;
-    text-align: center; */
-}
-
-a{
-    /* display: block;
-    height: 100%;
-    cursor: pointer;
-    letter-spacing: -1px; */
-}
-
-.no{
-    /* width: 11px;
-    height: 11px;
-    line-height: 11px;
-    border: solid 2px #ed8c00; */
 }
 
 

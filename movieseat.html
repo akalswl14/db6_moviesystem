@@ -15,7 +15,7 @@
             <div class="topnav">
                 <a href="index.html">홈</a>
                 <a href="movie.html">영화</a>
-                <a class="active" href="#reserve">예매</a>
+                <a class="active" href="reserve_location.html">예매</a>
                 <a href="cine_login.html">로그인</a>
                 <a href="mycine.html">MY씨네</a>
                 <a href="#discount">할인정보</a>
@@ -36,7 +36,7 @@
                         <h3>성인</h3>
                     </div>
                     <div class="bo second">
-                        <select name="adult_num">
+                        <select name="adult_num" id="adult" onchange="numchoice(this)">
                             <option value="00">0</option>
                             <option value="01" selected="selected">1</option>
                             <option value="02">2</option>
@@ -49,7 +49,7 @@
                         <h3>청소년</h3>
                     </div>
                     <div class="bo firth">
-                        <select name="kid_num">
+                        <select name="kid_num" id="kid" onchange="numchoice(this)">
                             <option value="00">0</option>
                             <option value="01" selected="selected">1</option>
                             <option value="02">2</option>
@@ -65,290 +65,290 @@
                     </div>
                     <div class="seat">
                         <div class="row">
-                            <div class="seat_val alp">A</div>
-                            <div class="seat_val num" id="a1" onclick="seatchoice(this)">
+                            <div class="seat_val_alp">A</div>
+                            <div class="seat_val_num" id="A1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
-                            <div class="seat_val num" id="a2">
+                            <div class="seat_val_num" id="A2" onclick="seatchoice(this)">
                                 <span class="no">2</span>
                             </div>
-                            <div class="seat_val num" id="a3">
+                            <div class="seat_val_num" id="A3" onclick="seatchoice(this)">
                                 <span class="no">3</span>
                             </div>
-                            <div class="seat_val num" id="a4">
+                            <div class="seat_val_num" id="A4" onclick="seatchoice(this)">
                                 <span class="no">4</span>
                             </div>
-                            <div class="seat_val num" id="a5">
+                            <div class="seat_val_num" id="A5" onclick="seatchoice(this)">
                                 <span class="no">5</span>
                             </div>
-                            <div class="seat_val num" id="a6">
+                            <div class="seat_val_num" id="A6" onclick="seatchoice(this)">
                                 <span class="no">6</span>
                             </div>
-                            <div class="seat_val num" id="a7">
+                            <div class="seat_val_num" id="A7" onclick="seatchoice(this)">
                                 <span class="no">7</span>
                             </div>
-                            <div class="seat_val num" id="a8">
+                            <div class="seat_val_num" id="A8" onclick="seatchoice(this)">
                                 <span class="no">8</span>
                             </div>
-                            <div class="seat_val num" id="a9">
+                            <div class="seat_val_num" id="A9" onclick="seatchoice(this)">
                                 <span class="no">9</span>
                             </div>
-                            <div class="seat_val num" id="a10">
+                            <div class="seat_val_num" id="A10" onclick="seatchoice(this)">
                                 <span class="no">10</span>
                             </div>
-                            <div class="seat_val num" id="a11">
+                            <div class="seat_val_num" id="A11" onclick="seatchoice(this)">
                                 <span class="no">11</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="seat_val alp">B</div>
-                            <div class="seat_val num" id="b1">
+                            <div class="seat_val_alp">B</div>
+                            <div class="seat_val_num" id="B1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
-                            <div class="seat_val num" id="b2">
+                            <div class="seat_val_num" id="B2" onclick="seatchoice(this)">
                                 <span class="no">2</span>
                             </div>
-                            <div class="seat_val num" id="b3">
+                            <div class="seat_val_num" id="B3" onclick="seatchoice(this)">
                                 <span class="no">3</span>
                             </div>
-                            <div class="seat_val num" id="b4">
+                            <div class="seat_val_num" id="B4" onclick="seatchoice(this)">
                                 <span class="no">4</span>
                             </div>
-                            <div class="seat_val num" id="b5">
+                            <div class="seat_val_num" id="B5" onclick="seatchoice(this)">
                                 <span class="no">5</span>
                             </div>
-                            <div class="seat_val num" id="b6">
+                            <div class="seat_val_num" id="B6" onclick="seatchoice(this)">
                                 <span class="no">6</span>
                             </div>
-                            <div class="seat_val num" id="b7">
+                            <div class="seat_val_num" id="B7" onclick="seatchoice(this)">
                                 <span class="no">7</span>
                             </div>
-                            <div class="seat_val num" id="b8">
+                            <div class="seat_val_num" id="B8" onclick="seatchoice(this)">
                                 <span class="no">8</span>
                             </div>
-                            <div class="seat_val num" id="b9">
+                            <div class="seat_val_num" id="B9" onclick="seatchoice(this)">
                                 <span class="no">9</span>
                             </div>
-                            <div class="seat_val num" id="b10">
+                            <div class="seat_val_num" id="B10" onclick="seatchoice(this)">
                                 <span class="no">10</span>
                             </div>
-                            <div class="seat_val num" id="b11">
+                            <div class="seat_val_num" id="B11" onclick="seatchoice(this)">
                                 <span class="no">11</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="seat_val alp">C</div>
-                            <div class="seat_val num" id="c1">
+                            <div class="seat_val_alp">C</div>
+                            <div class="seat_val_num" id="C1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
-                            <div class="seat_val num" id="c2">
+                            <div class="seat_val_num" id="C2" onclick="seatchoice(this)">
                                 <span class="no">2</span>
                             </div>
-                            <div class="seat_val num" id="c3">
+                            <div class="seat_val_num" id="C3" onclick="seatchoice(this)">
                                 <span class="no">3</span>
                             </div>
-                            <div class="seat_val num" id="c4">
+                            <div class="seat_val_num" id="C4" onclick="seatchoice(this)">
                                 <span class="no">4</span>
                             </div>
-                            <div class="seat_val num" id="c5">
+                            <div class="seat_val_num" id="C5" onclick="seatchoice(this)">
                                 <span class="no">5</span>
                             </div>
-                            <div class="seat_val num" id="c6">
+                            <div class="seat_val_num" id="C6" onclick="seatchoice(this)">
                                 <span class="no">6</span>
                             </div>
-                            <div class="seat_val num" id="c7">
+                            <div class="seat_val_num" id="C7" onclick="seatchoice(this)">
                                 <span class="no">7</span>
                             </div>
-                            <div class="seat_val num" id="c8">
+                            <div class="seat_val_num" id="C8" onclick="seatchoice(this)">
                                 <span class="no">8</span>
                             </div>
-                            <div class="seat_val num" id="c9">
+                            <div class="seat_val_num" id="C9" onclick="seatchoice(this)">
                                 <span class="no">9</span>
                             </div>
-                            <div class="seat_val num" id="c10">
+                            <div class="seat_val_num" id="C10" onclick="seatchoice(this)">
                                 <span class="no">10</span>
                             </div>
-                            <div class="seat_val num" id="c11">
+                            <div class="seat_val_num" id="C11" onclick="seatchoice(this)">
                                 <span class="no">11</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="seat_val alp">D</div>
-                            <div class="seat_val num" id="d1">
+                            <div class="seat_val_alp">D</div>
+                            <div class="seat_val_num" id="D1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
-                            <div class="seat_val num" id="d2">
+                            <div class="seat_val_num" id="D2" onclick="seatchoice(this)">
                                 <span class="no">2</span>
                             </div>
-                            <div class="seat_val num" id="d3">
+                            <div class="seat_val_num" id="D3" onclick="seatchoice(this)">
                                 <span class="no">3</span>
                             </div>
-                            <div class="seat_val num" id="d4">
+                            <div class="seat_val_num" id="D4" onclick="seatchoice(this)">
                                 <span class="no">4</span>
                             </div>
-                            <div class="seat_val num" id="d5">
+                            <div class="seat_val_num" id="D5" onclick="seatchoice(this)">
                                 <span class="no">5</span>
                             </div>
-                            <div class="seat_val num" id="d6">
+                            <div class="seat_val_num" id="D6" onclick="seatchoice(this)">
                                 <span class="no">6</span>
                             </div>
-                            <div class="seat_val num" id="d7">
+                            <div class="seat_val_num" id="D7" onclick="seatchoice(this)">
                                 <span class="no">7</span>
                             </div>
-                            <div class="seat_val num" id="d8">
+                            <div class="seat_val_num" id="D8" onclick="seatchoice(this)">
                                 <span class="no">8</span>
                             </div>
-                            <div class="seat_val num" id="d9">
+                            <div class="seat_val_num" id="D9" onclick="seatchoice(this)">
                                 <span class="no">9</span>
                             </div>
-                            <div class="seat_val num" id="d10">
+                            <div class="seat_val_num" id="D10" onclick="seatchoice(this)">
                                 <span class="no">10</span>
                             </div>
-                            <div class="seat_val num" id="d11">
+                            <div class="seat_val_num" id="D11" onclick="seatchoice(this)">
                                 <span class="no">11</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="seat_val alp">E</div>
-                            <div class="seat_val num" id="e1">
+                            <div class="seat_val_alp">E</div>
+                            <div class="seat_val_num" id="E1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
-                            <div class="seat_val num" id="e2">
+                            <div class="seat_val_num" id="E2" onclick="seatchoice(this)">
                                 <span class="no">2</span>
                             </div>
-                            <div class="seat_val num" id="e3">
+                            <div class="seat_val_num" id="E3" onclick="seatchoice(this)">
                                 <span class="no">3</span>
                             </div>
-                            <div class="seat_val num" id="e4">
+                            <div class="seat_val_num" id="E4" onclick="seatchoice(this)">
                                 <span class="no">4</span>
                             </div>
-                            <div class="seat_val num" id="e5">
+                            <div class="seat_val_num" id="E5" onclick="seatchoice(this)">
                                 <span class="no">5</span>
                             </div>
-                            <div class="seat_val num" id="e6">
+                            <div class="seat_val_num" id="E6" onclick="seatchoice(this)">
                                 <span class="no">6</span>
                             </div>
-                            <div class="seat_val num" id="e7">
+                            <div class="seat_val_num" id="E7" onclick="seatchoice(this)">
                                 <span class="no">7</span>
                             </div>
-                            <div class="seat_val num" id="e8">
+                            <div class="seat_val_num" id="E8" onclick="seatchoice(this)">
                                 <span class="no">8</span>
                             </div>
-                            <div class="seat_val num" id="e9">
+                            <div class="seat_val_num" id="E9" onclick="seatchoice(this)">
                                 <span class="no">9</span>
                             </div>
-                            <div class="seat_val num" id="e10">
+                            <div class="seat_val_num" id="E10" onclick="seatchoice(this)">
                                 <span class="no">10</span>
                             </div>
-                            <div class="seat_val num" id="e11">
+                            <div class="seat_val_num" id="E11" onclick="seatchoice(this)">
                                 <span class="no">11</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="seat_val alp">F</div>
-                            <div class="seat_val num" id="f1">
+                            <div class="seat_val_alp">F</div>
+                            <div class="seat_val_num" id="F1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
-                            <div class="seat_val num" id="f2">
+                            <div class="seat_val_num" id="F2" onclick="seatchoice(this)">
                                 <span class="no">2</span>
                             </div>
-                            <div class="seat_val num" id="f3">
+                            <div class="seat_val_num" id="F3" onclick="seatchoice(this)">
                                 <span class="no">3</span>
                             </div>
-                            <div class="seat_val num" id="f4">
+                            <div class="seat_val_num" id="F4" onclick="seatchoice(this)">
                                 <span class="no">4</span>
                             </div>
-                            <div class="seat_val num" id="f5">
+                            <div class="seat_val_num" id="F5" onclick="seatchoice(this)">
                                 <span class="no">5</span>
                             </div>
-                            <div class="seat_val num" id="f6">
+                            <div class="seat_val_num" id="F6" onclick="seatchoice(this)">
                                 <span class="no">6</span>
                             </div>
-                            <div class="seat_val num" id="f7">
+                            <div class="seat_val_num" id="F7" onclick="seatchoice(this)">
                                 <span class="no">7</span>
                             </div>
-                            <div class="seat_val num" id="f8">
+                            <div class="seat_val_num" id="F8" onclick="seatchoice(this)">
                                 <span class="no">8</span>
                             </div>
-                            <div class="seat_val num" id="f9">
+                            <div class="seat_val_num" id="F9" onclick="seatchoice(this)">
                                 <span class="no">9</span>
                             </div>
-                            <div class="seat_val num" id="f10">
+                            <div class="seat_val_num" id="F10" onclick="seatchoice(this)">
                                 <span class="no">10</span>
                             </div>
-                            <div class="seat_val num" id="f11">
+                            <div class="seat_val_num" id="F11" onclick="seatchoice(this)">
                                 <span class="no">11</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="seat_val alp">G</div>
-                            <div class="seat_val num" id="g1">
+                            <div class="seat_val_alp">G</div>
+                            <div class="seat_val_num" id="G1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
-                            <div class="seat_val num" id="g2">
+                            <div class="seat_val_num" id="G2" onclick="seatchoice(this)">
                                 <span class="no">2</span>
                             </div>
-                            <div class="seat_val num" id="g3">
+                            <div class="seat_val_num" id="G3" onclick="seatchoice(this)">
                                 <span class="no">3</span>
                             </div>
-                            <div class="seat_val num" id="g4">
+                            <div class="seat_val_num" id="G4" onclick="seatchoice(this)">
                                 <span class="no">4</span>
                             </div>
-                            <div class="seat_val num" id="g5">
+                            <div class="seat_val_num" id="G5" onclick="seatchoice(this)">
                                 <span class="no">5</span>
                             </div>
-                            <div class="seat_val num" id="g6">
+                            <div class="seat_val_num" id="G6" onclick="seatchoice(this)">
                                 <span class="no">6</span>
                             </div>
-                            <div class="seat_val num" id="g7">
+                            <div class="seat_val_num" id="G7" onclick="seatchoice(this)">
                                 <span class="no">7</span>
                             </div>
-                            <div class="seat_val num" id="g8">
+                            <div class="seat_val_num" id="G8" onclick="seatchoice(this)">
                                 <span class="no">8</span>
                             </div>
-                            <div class="seat_val num" id="g9">
+                            <div class="seat_val_num" id="G9" onclick="seatchoice(this)">
                                 <span class="no">9</span>
                             </div>
-                            <div class="seat_val num" id="g10">
+                            <div class="seat_val_num" id="G10" onclick="seatchoice(this)">
                                 <span class="no">10</span>
                             </div>
-                            <div class="seat_val num" id="g11">
+                            <div class="seat_val_num" id="G11" onclick="seatchoice(this)">
                                 <span class="no">11</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="seat_val alp">H</div>
-                            <div class="seat_val num" id="h1">
+                            <div class="seat_val_alp">H</div>
+                            <div class="seat_val_num" id="H1" onclick="seatchoice(this)">
                                 <span class="no">1</span>
                             </div>
-                            <div class="seat_val num" id="h2">
+                            <div class="seat_val_num" id="H2" onclick="seatchoice(this)">
                                 <span class="no">2</span>
                             </div>
-                            <div class="seat_val num" id="h3">
+                            <div class="seat_val_num" id="H3" onclick="seatchoice(this)">
                                 <span class="no">3</span>
                             </div>
-                            <div class="seat_val num" id="h4">
+                            <div class="seat_val_num" id="H4" onclick="seatchoice(this)">
                                 <span class="no">4</span>
                             </div>
-                            <div class="seat_val num" id="h5">
+                            <div class="seat_val_num" id="H5" onclick="seatchoice(this)">
                                 <span class="no">5</span>
                             </div>
-                            <div class="seat_val num" id="h6">
+                            <div class="seat_val_num" id="H6" onclick="seatchoice(this)">
                                 <span class="no">6</span>
                             </div>
-                            <div class="seat_val num" id="h7">
+                            <div class="seat_val_num" id="H7" onclick="seatchoice(this)">
                                 <span class="no">7</span>
                             </div>
-                            <div class="seat_val num" id="h8">
+                            <div class="seat_val_num" id="H8" onclick="seatchoice(this)">
                                 <span class="no">8</span>
                             </div>
-                            <div class="seat_val num" id="h9">
+                            <div class="seat_val_num" id="H9" onclick="seatchoice(this)">
                                 <span class="no">9</span>
                             </div>
-                            <div class="seat_val num" id="h10">
+                            <div class="seat_val_num" id="H10" onclick="seatchoice(this)">
                                 <span class="no">10</span>
                             </div>
-                            <div class="seat_val num" id="h11">
+                            <div class="seat_val_num" id="H11" onclick="seatchoice(this)">
                                 <span class="no">11</span>
                             </div>
                         </div>
@@ -360,7 +360,7 @@
                     <div clss="imgimg">
                         <img src="img/poster1.png">
                     </div>
-                    <div class="write1">
+                    <div id="write1">
                         <span>영화: 82년생 김지영</span></br>
                         <span>상영일: 11월 15일</span></br>
                         <span>상영시간: 10:25~12:25</span></br>
@@ -368,8 +368,10 @@
                         <span>좌석:</span>
                         <span id ="seatchoice"></span>
                     </div>
-                    <div class="write2">
-                        <span>가격:30000원 </span>
+                    <div id="write2">
+                        <span>가격 : </span>
+                        <span id="totalprice">0</span>
+                        <span> 원</span>
                     </div>
                     <div class="button">
                         <form action="payment.html">
