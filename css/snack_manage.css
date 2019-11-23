@@ -91,7 +91,62 @@ body{
 .nemo_diff:hover{
     background-color:white;
 }
+.downcontainer{
+    padding-left: 3vw;
+    margin: 5vh 0 1vh 0;
+}
+.title_downcontainer{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.input_search{
+    margin:1vw 0 1vh 1vw;
+    font-size: 1.2rem;
+}
 
+form{
+    display: inline-block;
+}
 
+input{
+    margin: 0 0.5vw 0 1vw;
+    font-size: 1.1rem;
+    background: rgb(249, 247, 253);
+    border: 0.5px solid #cccccc;
+}
+#productcode{
+    width: 12vw;
+}
+#inputyear{
+    width: 6vw;
+}
+#inputmonth,#inputday{
+    width: 3vw;
+}
 
+input[type="submit"]{
+    width: 4.5vw;
+    color: rgb(93, 93, 93);
+}
 
+table{
+    margin:1vw 0 1vh 1vw;
+    border-collapse: collapse;
+    border: 0.5px solid rgba(148, 148, 148, 0.486);
+    text-align: center;
+    background-color: white;
+}
+table hr{
+    margin: 0 1vw 0 1vw;
+    box-sizing: border-box;
+    border: 0.5px solid #cccccc;
+    width: 100%d;
+}
+th{
+    border-bottom: 1px solid #ddd;
+    padding:2vh 2vw 2vh 2vw;
+    margin: 0 1vw 0 1vw;
+}
+td{
+    padding:1vh 2vw 1vh 2vw;
+}
