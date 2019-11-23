@@ -90,21 +90,24 @@ body{
     box-shadow: rgb(170, 169, 169) 0px 5px 9px 0px;
     position: absolute;
     right:0;
+    top: 17px;
 }
 
 .midbox{
     width: 90vw;
     height: 13vh;
     margin: 0 auto;
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
     position: relative;
+    line-height:13vh;
 }
 
 .container {
     /* width: 20vw; */
-    height: 14vh;
+    /* height: 14vh; */
     display: inline-block;
     vertical-align: top; 
+    margin: 1vh 0.5vw 1vh 0.5vw;
 }
 
 .container.third{
@@ -113,9 +116,9 @@ body{
     margin-top: 1vh;
 }
 
-.container.second{
+/* .container.second{
     padding: 4px;
-}
+} */
 
 #branch{
     font-size: 2.5rem;
@@ -133,7 +136,7 @@ body{
 #title_downbox{
     position: fixed;
     top:86px;
-    height: 115px;
+    height: 100px;
     width: 100%;
     vertical-align: middle;
     margin-bottom: 3vh;
@@ -147,36 +150,33 @@ body{
 }
 
 .double_box{
-    background-color: rgb(148, 133, 178, 0.59);
-    width:90vw;
-    height:4vh;
-    text-align: left;  
+    background-color: rgb(148, 133, 178, 0.3);
+    width: 90vw;
+    height: 6.3vh;
+    text-align: left; 
 }
-
 .title h2{
     color: white;
     padding: 15px;
     margin: 0;
 }
 
-.movie h2{
-    color: black;
-    padding-left:15px;
-    margin: 0;
-}
-
 .movie h4{
-    color: black;
-    padding-top: 7px;
+    color: #585858;
     margin: 0;
 }
-
+.movie h2{
+    color: #585858;
+    margin: 0; 
+    padding-left: 5px;  
+}
 .movie {
     display: inline-block;
-    vertical-align: top; 
+    margin: 1vh 0.5vw 1vh 0.5vw;
+    vertical-align: middle;
 }
 
-.movie.num {
+/* .movie.num {
     width: 4vw;
     height: 3vh;
 }
@@ -184,18 +184,26 @@ body{
 .movie.kind {
     width: 8vw;
     height: 3vh;   
-}
+} */
 
 .table h5,.table h2{
     margin:0;
     padding-top: 1px;
 }
-.double_down_box{
-    height: 11.7vh;   
+
+.timeinfo{
+    height:11.7vh;
 }
 
 .time_1{
     display: inline-block;
+    /* height:12vh; */
+    width: 5.76vw;
+    height: 11.7vh;
+    margin-right: 1.3vw;
+    text-align: center;
+    margin-top:0;
+    margin-bottom:0;
 }
 
 .table{
@@ -210,49 +218,40 @@ span{
     display: block;
 }
 
-.timeinfo{
-    width: 5vw;
-    height: 11.7vh;
-    padding-right: 1.5vw;
-    text-align: center;
-    margin-top:0;
-    margin-bottom:0;
-}
-
 a{
     text-decoration: none;
     color: black;
 }
 
-.time_1 p a span:nth-child(1) {
+.time_1 .timeinfo span:nth-child(1) {
     display: none;
     color:white;
     font-size:1.35em;
     font-weight: bolder;
-    width: 6vw;
+    width: 5.75vw;
     height: 8vh;
     padding-top: 3vh;
     background: #424242;  
 }
-.time_1 p a span:nth-child(2),.time_1 p a span:nth-child(3),.time_1 p a span:nth-child(4) {
+.time_1 .timeinfo span:nth-child(2),.time_1 .timeinfo span:nth-child(3),.time_1 .timeinfo span:nth-child(4) {
      color: black;
 }
-.time_1 p a:hover span:nth-child(2),.time_1 p a:hover span:nth-child(3),.time_1 p a:hover span:nth-child(4) {
+.time_1 .timeinfo:hover span:nth-child(2),.time_1 .timeinfo:hover span:nth-child(3),.time_1 .timeinfo:hover span:nth-child(4) {
     display: none;
 }
-.time_1 p a:hover span:nth-child(1){
+.time_1 .timeinfo:hover span:nth-child(1){
     display: block;
 }
-.time_1 p a span:nth-child(2) {
+.time_1 .timeinfo span:nth-child(2) {
     font-size: 0.8em;
     font-weight: bolder;
     padding-top: 1.5vh;  
 }
-.time_1 p a span:nth-child(3) {
+.time_1 .timeinfo span:nth-child(3) {
     font-size: 1.5em;
     font-weight: bolder;   
 }
-.time_1 p a span:nth-child(4) {
+.time_1 .timeinfo span:nth-child(4) {
     font-size: 0.8em;
     font-weight: bolder;   
 }
