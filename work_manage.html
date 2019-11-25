@@ -13,40 +13,40 @@
                 <a href="index.html"><img src="img/logo2.png"></a>
             </div>
             <div class="nav">
-                    <ul class="nav_list">
-                            <li class="nemo" onclick="location.href='work_manage.html';">
-                                <div class="line">
-                                    <img src="img/home.png">
-                                </div>
-                                <div class="line">
-                                    <div class="nav_item"><span class="nav_link">나의 근무상황</span></div>
-                                </div>
-                            </li>
-                            <li class="nemo_diff" onclick="location.href='snack_manage.html';">
-                                <div class="line">
-                                    <img src="img/snack_gray.png">
-                                </div>
-                                <div class="line">
-                                    <div class="nav_item"><span class="nav_link">매점 관리</span></div>
-                                </div>
-                            </li>
-                            <li class="nemo_diff" onclick="location.href='equipment_detail.html'">
-                                <div class="line">
-                                    <img src="img/list_gray.png">
-                                </div>
-                                <div class="line">
-                                    <div class="nav_item"><span class="nav_link">장비 내역</span></div>
-                                </div>
-                            </li>
-                            <li class="nemo_diff" onclick="location.href='equip_manage.html'">
-                                <div class="line">
-                                    <img src="img/hammer_gray.png">
-                                </div>
-                                <div class="line">
-                                    <div class="nav_item"><span class="nav_link">장비 관리</span></div>
-                                </div>
-                            </li>
-                        </ul>
+                <ul class="nav_list">
+                    <li class="nemo" onclick="location.href='work_manage.html';">
+                        <div class="line">
+                            <img src="img/home.png">
+                        </div>
+                        <div class="line">
+                            <div class="nav_item"><span class="nav_link">나의 근무상황</span></div>
+                        </div>
+                    </li>
+                    <li class="nemo_diff" onclick="location.href='snack_manage.html';">
+                        <div class="line">
+                            <img src="img/snack_gray.png">
+                        </div>
+                        <div class="line">
+                            <div class="nav_item"><span class="nav_link">매점 관리</span></div>
+                        </div>
+                    </li>
+                    <li class="nemo_diff" onclick="location.href='equipment_detail.html'">
+                        <div class="line">
+                            <img src="img/list_gray.png">
+                        </div>
+                        <div class="line">
+                            <div class="nav_item"><span class="nav_link">장비 내역</span></div>
+                        </div>
+                    </li>
+                    <li class="nemo_diff" onclick="location.href='equip_manage.html'">
+                        <div class="line">
+                            <img src="img/hammer_gray.png">
+                        </div>
+                        <div class="line">
+                            <div class="nav_item"><span class="nav_link">장비 관리</span></div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div id="upbox">
@@ -100,116 +100,100 @@
             <div id="mid">
                 <div class="record short">
                     <h2>지각 기록</h2>
-                    <div class="latetime">
-                        <div class="date day">
-                            날짜
-                        </div>
-                        <div class="date ti">
-                            출근시각
-                        </div>
-                        <hr>
-                        <div class="date_val">
-                            <span class="dayvalue">2019.11.14</span>
-                        </div>
-                        <div class="date_val">
-                            <span class="timevalue">10:00</span>
-                        </div>
-                        <div class="date_val">
-                            <span class="dayvalue">2019.11.16</span>
-                        </div>
-                        <div class="date_val">
-                            <span class="timevalue">09:47</span>
-                        </div>
+                    <div class="wrap">
+                        <table>
+                            <th>날짜</th>
+                            <th>출근시각</th>
+                            <tr>
+                                <!-- 첫번째 줄 시작 -->
+                                <td>2019.11.14</td>
+                                <td>10:00</td>
+                            </tr><!-- 첫번째 줄 끝 -->
+                            <tr>
+                                <!-- 두번째 줄 시작 -->
+                                <td>2019.11.16</td>
+                                <td>09:47</td>
+                            </tr><!-- 두번째 줄 끝 -->
+                        </table>
                     </div>
                 </div>
                 <div class="record long">
                     <h2>휴무 기록</h2>
-                    <div class="resttime">
-                        <div class="datediff">종류</div>
-                        <div class="datediff">시작일자</div>
-                        <div class="datediff">종료일자</div>
-                        <hr>
-                        <div class="real_val">
-                            <span class="dayvalue">질병</span>
-                        </div>
-                        <div class="real_val">
-                            <span class="timevalue">2019.11.11</span>
-                        </div>
-                        <div class="real_val">
-                            <span class="timevalue">2019.11.18</span>
-                        </div>
-
-                        <div class="real_val">
-                            <span class="dayvalue">무단</span>
-                        </div>
-                        <div class="real_val">
-                            <span class="timevalue">2019.12.11</span>
-                        </div>
-                        <div class="real_val">
-                            <span class="timevalue">2019.12.18</span>
-                        </div>
+                    <div class="wrap">
+                        <table>
+                            <th>종류</th>
+                            <th>시작일자</th>
+                            <th>종료일자</th>
+                            <tr>
+                                <!-- 첫번째 줄 시작 -->
+                                <td>질병</td>
+                                <td>2019.11.14</td>
+                                <td>2019.11.18</td>
+                            </tr><!-- 첫번째 줄 끝 -->
+                            <tr>
+                                <!-- 두번째 줄 시작 -->
+                                <td>무단</td>
+                                <td>2019.12.04</td>
+                                <td>2019.12.14</td>
+                            </tr><!-- 두번째 줄 끝 -->
+                        </table>
                     </div>
                 </div>
                 <div class="record short">
                     <h2>초과 근무 기록</h2>
-                    <div class="overtime">
-                        <div class="date">
-                            날짜
-                        </div>
-                        <div class="date">
-                            초과시간
-                        </div>
-                        <hr>
-                        <div class="date_val">
-                            <span class="dayvalue">2019.11.14</span>
-                        </div>
-                        <div class="date_val">
-                            <span class="timevalue">24</span>
-                        </div>
-                        <div class="date_val">
-                            <span class="dayvalue">2019.11.14</span>
-                        </div>
-                        <div class="date_val">
-                            <span class="timevalue">30</span>
-                        </div>
+                    <div class="wrap">
+                        <table>
+                            <th>날짜</th>
+                            <th>초과시간</th>
+                            <tr>
+                                <!-- 첫번째 줄 시작 -->
+                                <td>2019.11.14</td>
+                                <td>24</td>
+                            </tr><!-- 첫번째 줄 끝 -->
+                            <tr>
+                                <!-- 두번째 줄 시작 -->
+                                <td>2019.12.04</td>
+                                <td>36</td>
+                            </tr><!-- 두번째 줄 끝 -->
+                        </table>
                     </div>
+
                 </div>
             </div>
             <div id="bot">
                 <div class="bottom short">
                     <h2>기본 근무 정보</h2>
                     <div class="basic">
-                        <div class="hmm">
-                            <div class="fir cen">이름</div>
-                            <div class="fir">
-                                <span>마민지</span>
-                            </div>
-                            <div class="fir cen">직책</div>
-                            <div class="fir">
-                                <span>팀장</span>
-                            </div>
+                        <div class="info cen">이름</div>
+                        <div class="info">
+                            <span>마민지</span>
                         </div>
-                        <div class="fir cen">부서</div>
-                        <div class="fir">
+                        <div class="info cen">직책</div>
+                        <div class="info">
+                            <span>팀장</span>
+                        </div>
+
+                        <div class="info cen">부서</div>
+                        <div class="info">
                             <span>마케팅</span>
                         </div>
-                        <div class="fir cen">점포명</div>
-                        <div class="fir">
+                        <div class="info cen">점포명</div>
+                        <div class="info">
                             <span>본사</span>
                         </div>
-                        <div class="fir cen">조</div>
-                        <div class="fir">
+                        <div class="info cen">조</div>
+                        <div class="info">
                             <span>1</span>
                         </div>
-                        <div class="fir cen">기본휴계수</div>
-                        <div class="fir">
+                        <div class="info cen">기본휴계수</div>
+                        <div class="info">
                             <span>10</span>
                         </div>
                     </div>
                 </div>
                 <div class="bottom short">
                     <h2>10월 급여 상황</h2>
-                    <div class="salary">
+                    <div class="basic">
                         <div class="general con">일반 근무 급여</div>
                         <div class="general">
                             <span>20000000원</span>

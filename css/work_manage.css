@@ -108,17 +108,17 @@ body{
     display: inline-block;
     float: left;
     text-align: center;
+    border: 0.5px solid rgba(148, 148, 148, 0.486);
+    box-shadow: 2px 2px 4px #848484;
 }
 .commute.same{
     background-color: white;
-    box-shadow: 2px 2px 4px #848484;
     height: 11vh;
     width: 10.5vw;
     margin-right: 4vw;
 }
 .commute.diff1{
     background-color: #004479;
-    box-shadow: 2px 2px 4px #848484;
     margin-left: 3.5vw;
     height: 11vh;
     width: 5vw;
@@ -126,21 +126,18 @@ body{
 }
 .commute.diff2{
     background-color:#FF4F79;
-    box-shadow: 2px 2px 4px #848484;
     height: 11vh;
     width: 5vw; 
     line-height: 11vh;
 }
 .commute.diff3{
     background-color: #FF9800;
-    box-shadow: 2px 2px 4px #848484;
     height: 11vh;
     width: 5vw; 
     line-height: 11vh;
 }
 .commute.diff4{
     background-color: #01AF3E;
-    box-shadow: 2px 2px 4px #848484;
     height: 11vh;
     width: 5vw;
     line-height: 11vh;
@@ -153,7 +150,6 @@ body{
 .record{
     display: inline-block;
     vertical-align: top;     
-    /* 혁명    */
 }
 .record.short{
     width: 15.5vw;
@@ -173,18 +169,6 @@ body{
     display: inline-block;
     width: 6vw;
     margin: 1vh 0.5vw 1vh 0.5vw;    
-}
-.latetime,.overtime,.resttime{
-    background-color: white;
-    font-size:1.1em;
-    /* border: 0.5px solid #848484; */
-    box-shadow: 2px 2px 4px #848484;
-    text-align: center;
-}
-hr{
-    width:13vw;
-    margin-top:0vh;
-    margin-bottom: 0vh;
 }
 .datediff{
     display: inline-block;
@@ -207,22 +191,16 @@ hr{
 .bottom{
     display: inline-block;
     vertical-align: top;     
-    /* 혁명    */
 }
 .bottom.short{
     width: 35vw;
     margin-left: 3.5vw;    
     margin-right: 0.4vw;
 }
-.salary{
-    background-color: white;
-    font-size:1.1em;
-    box-shadow: 2px 2px 4px #848484;
-    text-align: center;
-}
 .basic{
     background-color: white;
     font-size:1.1em;
+    border: 0.5px solid rgba(148, 148, 148, 0.486);
     box-shadow: 2px 2px 4px #848484;
     text-align: center;
 }
@@ -232,10 +210,10 @@ hr{
     margin: 2vh 5vw 2vh 3vw;
     width: 9vw;
 }
-.general.con,.fir.cen{
+.general.con,.info.cen{
     font-weight:bold;
 }
-.fir{
+.info{
     display: inline-block;
     font-size: 1.15em;
     margin: 2vh 0.4vh 2vh 0.4vw;
@@ -247,6 +225,40 @@ hr{
 }
 .nemo_diff:hover{
     background-color:white;
+}
+table{
+    margin:1vw 0 1vh 1vw;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+}
+table hr{
+    margin: 0 1vw 0 1vw;
+    box-sizing: border-box;
+    border: 0.5px solid #cccccc;
+    width: 100%d;
+}
+th{
+    border-bottom: 1px solid #ddd;
+    padding: 1vh 1.4vw 1vh 1.3vw;
+    margin: 0 1vw 0 1vw;
+}
+td{
+    padding: 1vh 1vw 1vh 1vw;;
+}
+
+.wrap{
+    background: white;
+    border: 0.5px solid rgba(148, 148, 148, 0.486);
+    box-shadow: 2px 2px 4px #848484;
+}
+.record.long .wrap th{
+    border-bottom: 1px solid #ddd;
+    padding: 1vh 3.5vw 1vh 3.75vw;
+    margin: 0 1vw 0 1vw;    
+}
+.record.long .wrap td{
+    padding: 1vh 3.5vw 1vh 3.75vw; 
 }
 
 
