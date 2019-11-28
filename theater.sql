@@ -194,9 +194,9 @@ CREATE TABLE `FacilityRepair` (
 CREATE TABLE `Movie` (
 	`MovieCode`	        integer		NOT NULL	auto_increment,           /* PK */
 	`Name`	            	varchar(50)	NULL,
-	`Rate`	            	float		NULL,
+	`Rate`	            	float(2,1)	NULL,
 	`Genre`	            	varchar(8)	NULL,
-	`BookingRate`	    	float		NULL,
+	`BookingRate`	    	float(3,1)	NULL,
 	`Type`	            	integer		NULL,
 	`ReleaseDate`	    	date		NULL,
 	`RunningTime`	   	time(8)		NULL,
@@ -212,7 +212,7 @@ CREATE TABLE `Movie` (
 );
 
 CREATE TABLE `ScreeningMovie` (
-	`ScreeningNumber`	integer 	NOT NULL,    /* PK */
+	`ScreeningNumber`	integer 	NOT NULL	auto_increment,    /* PK */
 	`StartTime`	        DateTime	NULL,
 	`EndTime`	        DateTime	NULL,
 	`Date`	            	date		NULL,
