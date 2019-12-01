@@ -71,9 +71,12 @@ body{
 .container{
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 5vh;
+    padding-top: 3vh;
     padding-bottom: 1vh;
     text-align: center;
+}
+.container h1{
+    margin: 2vh 0 2vh 0;
 }
 .container h2{
     font-weight: 400;
@@ -101,8 +104,8 @@ body{
     width:15vw;
     margin-bottom: 3vh;
 }
-.container select{
-    /* display: inline-block; */
+#year,#month,#day{
+    display: inline-block;
     margin-left: 2vw;
     margin-right: 1vw;
     font-size: 1.3rem;
@@ -111,6 +114,7 @@ body{
     font-weight: 200;
     font-size:1.3rem;
     display: inline-block;
+    margin:0 1vw 0 0;
 }
 
 #inputcontainer{
@@ -118,7 +122,7 @@ body{
     width: 45vw;
     display: inline-block;
 }
-#idcontainer,#pwcontainer,#namecontainer,#birthcontainer,#emailcontainer{
+#idcontainer,#pwcontainer,#namecontainer,#birthcontainer,#emailcontainer,#phonecontainer{
     display: inline-block;
     text-align: left;
     margin-left: 1vw;
@@ -126,9 +130,9 @@ body{
 }
 #submitcontainer{
     text-align: center;
-    margin: 5vh 0 3vh 0;
+    margin: 3vh 0 3vh 0;
 }
-#ID,#PW{
+#ID,#PW,#email{
     background-color: white;
     border-radius: 10px;
     border:0.5px solid rgb(194, 194, 194);
@@ -140,19 +144,6 @@ body{
     width: 20vw;
     margin-top: 2vh;
 }
-#email{
-    background-color: white;
-    border-radius: 10px;
-    border:0.5px solid rgb(194, 194, 194);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;        
-    height: 8vh;
-    width: 37vw;
-    margin-top: 2vh;
-}
-
 .input{
     background-color: white;
     color: black;
@@ -161,12 +152,41 @@ body{
     border: none;
     margin-top: 3px;
 }
-.input[name='username'],input[name='password'],input[name='name']{
+.input[name='username'],input[name='password'],input[name='name'],.input[name='email']{
     width: 19vw;
-}
-.input[name='email']{
-    width: 36vw;
 }
 input::placeholder {
     color: grey;
+}
+#month,#day,#year{
+    background-color: white;
+    border-radius: 10px;
+    border:0.5px solid rgb(194, 194, 194);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;        
+    height: 5vh;
+    width: 10vw;
+}
+.input[name='year'],.input[name='month'],.input[name='day']{
+    width: 9vw;
+    height: 4vh;
+}
+#phone{
+    background-color: white;
+    border-radius: 10px;
+    border:0.5px solid rgb(194, 194, 194);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    height: 5vh;
+    width: 30vw;
+    margin-top: 2vh;
+}
+.input[name='phone']{
+    width: 28vw;
+    height: 4vh;
+
 }
