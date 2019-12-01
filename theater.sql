@@ -29,22 +29,22 @@ DROP TABLE IF EXISTS Reservation_Member;
 DROP TABLE IF EXISTS MovieBranch;
 
 CREATE TABLE Staff (
-	EmployeeID 	integer	 NOT  NULL,      
-	PW	         varchar(20)	 NULL,
-	Name	         varchar(50)	 NULL,
-	Birthday	     date	 NULL,
-	Sex	         varchar(5)	 NULL,
-	Position	     varchar(50)	 NULL,
-	Phonenumber	 varchar(100)	 NULL,
-	Address	     varchar(225)	 NULL,
-	Team	         varchar(50)	 NULL,
-	JoinDate	     date	 NULL,
-	HolidayNumber	 integer	 NULL,
-	Department	 varchar(50)	 NULL,
-	AccountNumber 	 varchar(50)	 NULL,
-	Bank	         varchar(20)	 NULL,
-	Salary	     integer 	NULL,
-	Branch	     Varchar(50)	 NOT  NULL,              
+	EmployeeID 	integer	 NOT NULL,      
+	PW	         varchar(20) NOT NULL,
+	Name	         varchar(50) NOT NULL,
+	Birthday	     date NOT NULL,
+	Sex	         varchar(5)	 NOT NULL,
+	Position	     varchar(50)	 NOT NULL,
+	Phonenumber	 varchar(100)	 NOT NULL,
+	Address	     varchar(225)	 NOT NULL,
+	Team	         varchar(50)	 NOT NULL,
+	JoinDate	     date	 NOT NULL,
+	HolidayNumber	 integer	 NOT NULL,
+	Department	 varchar(50)	 NOT NULL,
+	AccountNumber 	 varchar(50)	 NOT NULL,
+	Bank	         varchar(20)	 NOT NULL,
+	Salary	     integer 	NOT NULL,
+	Branch	     Varchar(50)	 NOT NULL,              
     
     CONSTRAINT  PK_Staff  PRIMARY KEY(EmployeeID)
 );
@@ -53,40 +53,40 @@ CREATE TABLE Holiday (
 	StartDate date NOT NULL,          
 	EndDate date NOT NULL,           
 	EmployeeID integer NOT NULL,       
-	Type varchar(20) NULL,
+	Type varchar(20) NOT NULL,
 	yearmonth varchar(10) NOT NULL,      
 
     CONSTRAINT  PK_Holiday  PRIMARY KEY(StartDate, EndDate, EmployeeID)
 );
 
 CREATE TABLE Commute (
-	Date	        date	 NOT  NULL,              
-	Time	        integer	 NOT  NULL,             
-	EmployeeID	 integer 	NOT  NULL,             
-	BarcodeNumber	 varchar(20)	 NULL,
-	yearmonth 	varchar(10)	 NOT  NULL,           
+	Date	        date	 NOT NULL,              
+	Time	        integer	 NOT NULL,             
+	EmployeeID	 integer 	NOT NULL,             
+	BarcodeNumber	 varchar(20)	 NOT NULL,
+	yearmonth 	varchar(10)	 NOT NULL,           
     
     CONSTRAINT PK_Commute PRIMARY KEY (Date, Time, EmployeeID)
 );
 
 CREATE TABLE Monthly_work (
-	yearmonth	     varchar(10)	 NOT  NULL,  
-	EmployeeID	     integer	 NOT  NULL,       
-	GeneralWorkHours	 integer 	NULL,
-	Late	             integer 	NULL,
-	UseHoliday	     integer	 NULL,
+	yearmonth	     varchar(10)	 NOT NULL,  
+	EmployeeID	     integer	 NOT NULL,       
+	GeneralWorkHours	 integer 	NOT NULL,
+	Late	             integer 	NULL DEFAULT 0,
+	UseHoliday	     integer	 NOT NULL,
 	OverworkHours  	integer	 NULL,
     
     CONSTRAINT PK_Monthly_work PRIMARY KEY (yearmonth, EmployeeID)
 );
 
 CREATE TABLE Monthly_Salary (
-	EmployeeID	     integer	 NOT  NULL,       
-	yearmonth	     varchar(10)	 NOT  NULL,   
-	GeneralworkSalary	 integer 	NULL,
-	OverworkSalary 	integer	  NULL,
-	ExtraPay	         integer 	NULL,
-	PaymentStatus	     boolean	 NULL,
+	EmployeeID	     integer	 NOT NULL,       
+	yearmonth	     varchar(10)	 NOT NULL,   
+	GeneralworkSalary	 integer 	NOT NULL,
+	OverworkSalary 	integer	  NOT NULL,
+	ExtraPay	         integer 	NOT NULL,
+	PaymentStatus	     boolean	 NOT NULL,
     
     CONSTRAINT PK_Monthly_Salary  PRIMARY KEY (EmployeeID, yearmonth)
 );
@@ -103,15 +103,15 @@ CREATE TABLE SaleRecords_Snackbar (
 
 CREATE TABLE Delivery (
 	OrderNumber varchar(50) NOT NULL,   
-	DeliveryNumber varchar(50) NULL,
-	ExceptDate date NULL,
+	DeliveryNumber varchar(50) NOT NULL,
+	ExceptDate date NOT NULL,
 
     CONSTRAINT PK_Delivery  PRIMARY KEY (OrderNumber)
 );
 
 CREATE TABLE Department (
 	DepartmentNumber integer NOT NULL,  
-	Name varchar(50) NULL,
+	Name varchar(50) NOT NULL,
 	Branch Varchar(50) NOT NULL,           
 
     CONSTRAINT PK_Department PRIMARY KEY (DepartmentNumber)
@@ -119,9 +119,9 @@ CREATE TABLE Department (
 
 CREATE TABLE OrderReturnRequest (
 	OrderNumber varchar(50) NOT NULL,   
-	Date date NULL,
-	OrderAmount integer NULL,
-	ReturnAmount integer NULL,
+	Date date NOT NULL,
+	OrderAmount integer NOT NULL,
+	ReturnAmount integer NOT NULL,
 	TotalPrice integer NOT NULL,
 	ProductNumber varchar(50) NOT NULL,              
 	DepartmentNumber integer NOT NULL,                  
@@ -132,9 +132,9 @@ CREATE TABLE OrderReturnRequest (
 
 CREATE TABLE Product_Snackbar (
 	ProductNumber varchar(50) NOT NULL,  
-	Name varchar(50) NULL,
-	Stock integer NULL,
-	Price integer NULL,
+	Name varchar(50) NOT NULL,
+	Stock integer NOT NULL,
+	Price integer NOT NULL,
 	Branch Varchar(50) NOT NULL,               
 
     CONSTRAINT PK_Product_Snackbar PRIMARY KEY (ProductNumber)
@@ -142,16 +142,16 @@ CREATE TABLE Product_Snackbar (
 
 CREATE TABLE Product (
 	ProductNumber varchar(50) NOT NULL,  
-	Name varchar(50) NULL,
-	Price integer NULL,
-	Category varchar(20) NULL,
+	Name varchar(50) NOT NULL,
+	Price integer NOT NULL,
+	Category varchar(20) NOT NULL,
 
     CONSTRAINT PK_Product PRIMARY KEY (ProductNumber)
 );
 
 CREATE TABLE Location (
 	LocationNumber integer NOT NULL,
-	Name varchar(30) NULL,
+	Name varchar(30) NOT NULL,
 	Branch Varchar(50) NOT NULL,            
 
 	CONSTRAINT PK_Location PRIMARY KEY (LocationNumber)
@@ -160,8 +160,8 @@ CREATE TABLE Location (
 CREATE TABLE EachFacility (
 	EachNumber integer NOT NULL,      
 	ProductNumber varchar(50) NOT NULL,  
-	Status varchar(50) NULL,
-	BuyDate date NULL,
+	Status varchar(50) NOT NULL,
+	BuyDate date NOT NULL,
 	LocationNumber integer NOT NULL,        
     
     CONSTRAINT PK_EachFacility PRIMARY KEY (EachNumber, ProductNumber)
@@ -170,11 +170,11 @@ CREATE TABLE EachFacility (
 CREATE TABLE Discard (
 	EachNumber integer NOT NULL,      
 	ProductNumber varchar(50) NOT NULL,   
-	RequestDate date NULL,
-	DiscardType varchar(255) NULL,
-	LocationNumber integer 	NULL,
-	Status varchar(20) NULL,
-	DiscardDate date NULL,
+	RequestDate date NOT NULL,
+	DiscardType varchar(255) NOT NULL,
+	LocationNumber integer 	NOT NULL,
+	Status varchar(20) NOT NULL,
+	DiscardDate date NOT NULL,
 	Branch Varchar(50) NOT NULL,       
     
     CONSTRAINT PK_Discard PRIMARY KEY (EachNumber, ProductNumber)
@@ -185,27 +185,27 @@ CREATE TABLE FacilityRepair (
 	EachNumber integer NOT NULL,
 	ProductNumber varchar(50) NOT NULL,
 	RequestDate date NOT NULL,
-	Detail varchar(255) NULL,
+	Detail varchar(255) NOT NULL,
 
     CONSTRAINT PK_FacilityRepair PRIMARY KEY (DepartNumber, EachNumber, ProductNumber)
 );
 
 CREATE TABLE Movie (
-	MovieCode integer 	NOT  NULL,          
-	Name varchar(50) 	NULL,
-	Rate float(2,1) 	NULL,
-	Genre varchar(8)	 NULL,
-	BookingRate float(3,1)	 NULL,
-	Type integer	 NULL,
-	ReleaseDate date	 NULL,
-	RunningTime time	 NULL,
-	Cast varchar(255)	 NULL,
-	TotalAttendance integer NULL,
-	AgeLimit varchar(10) NULL,
-	Poster varchar(50) NULL,
-	Story text NULL,
-	ScreenType integer NULL,
-	Director varchar(50) NULL,
+	MovieCode integer 	NOT NULL,          
+	Name varchar(50) 	NOT NULL,
+	Rate float(2,1) 	NOT NULL,
+	Genre varchar(8)	 NOT NULL,
+	BookingRate float(3,1)	 NOT NULL,
+	Type integer	 NOT NULL,
+	ReleaseDate date	 NOT NULL,
+	RunningTime time	 NOT NULL,
+	Cast varchar(255)	 NOT NULL,
+	TotalAttendance integer NOT NULL,
+	AgeLimit varchar(10) NOT NULL,
+	Poster varchar(50) NOT NULL,
+	Story text NOT NULL,
+	ScreenType integer NOT NULL,
+	Director varchar(50) NOT NULL,
 
     CONSTRAINT PK_Movie PRIMARY KEY (MovieCode)
 );
@@ -216,17 +216,17 @@ CREATE TABLE ScreeningMovie (
 	EndTime datetime NOT NULL,
 	Date date NOT NULL,
 	TotalSeat integer NOT NULL,
-	ReservedSeat integer NULL,
-	ScreeningSpace varchar(8) NULL,
+	ReservedSeat integer NOT NULL,
+	ScreeningSpace varchar(8) NOT NULL,
 	MovieCode integer NOT NULL,               
-	Branch Varchar(50) NOT  NULL,           
+	Branch Varchar(50) NOT NULL,           
 
     CONSTRAINT PK_ScreeningMovie PRIMARY KEY (ScreeningNumber)
 );
 
 CREATE TABLE Seat_ScreeningNumber (
 	SeatNumber varchar(8) NOT NULL,      
-	ReserveStatus boolean NULL,
+	ReserveStatus boolean NOT NULL,
 	ScreeningNumber integer NOT NULL,                       
 
     CONSTRAINT PK_Seat_ScreeningNumber PRIMARY KEY (SeatNumber)
@@ -234,17 +234,17 @@ CREATE TABLE Seat_ScreeningNumber (
 
 CREATE TABLE NonMemberInfo (
 	ReserveNumber varchar(50) NOT NULL,   
-	Name varchar(50) NULL,
-	PW varchar(128) NULL,
-	Birthday date NULL,
-	PhoneNumber varchar(100) NULL,
+	Name varchar(50) NOT NULL,
+	PW varchar(128) NOT NULL,
+	Birthday date NOT NULL,
+	PhoneNumber varchar(100) NOT NULL,
 
     CONSTRAINT PK_NonMemberInfo PRIMARY KEY (ReserveNumber)
 );
 
 CREATE TABLE ReserveSeatInfo (
 	SeatNumber varchar(8) NOT NULL,      
-	PeopleType varchar(8) NULL,
+	PeopleType varchar(8) NOT NULL,
 	ReserveNumber varchar(50) NOT NULL,                   
 
     CONSTRAINT PK_ReserveSeatInfo PRIMARY KEY (SeatNumber)
@@ -252,12 +252,12 @@ CREATE TABLE ReserveSeatInfo (
 
 CREATE TABLE ReservationInfo (
 	ReserveNumber Varchar(50) NOT NULL,   
-	MemberStatus boolean NULL,
-	PaymentNumber varchar(20) NULL,
+	MemberStatus boolean NOT NULL,
+	PaymentNumber varchar(20) NOT NULL,
 	ReserveDate date NOT NULL,
 	ReservePlace varchar(8) NOT NULL,
 	TicketIssueStatus boolean NOT NULL,
-	ReserveCancel integer NULL,
+	ReserveCancel integer NOT NULL,
 	ScreeningNumber integer NOT NULL,   
 
     CONSTRAINT PK_ReservationInfo PRIMARY KEY (ReserveNumber)
@@ -266,7 +266,7 @@ CREATE TABLE ReservationInfo (
 CREATE TABLE PaymentInfo (
 	PaymentNumber Varchar(50) NOT NULL,   
 	PaymentMethod varchar(50) NOT NULL,  
-	Amount integer NULL,
+	Amount integer NOT NULL,
 	ReserveNumber Varchar(50) NOT NULL,    
     
     CONSTRAINT PK_PaymentInfo PRIMARY KEY (PaymentNumber, PaymentMethod)
@@ -274,12 +274,12 @@ CREATE TABLE PaymentInfo (
 
 CREATE TABLE MemberInfo (
 	ID varchar(50) NOT NULL,           
-	PW varchar(128) NULL,
-	Name varchar(50) NULL,
-	PhoneNumber varchar(100) NULL,
-	Birthday date NULL,
-	Point integer NULL,
-	AccumulatedPoint integer NULL,
+	PW varchar(128) NOT NULL,
+	Name varchar(50) NOT NULL,
+	PhoneNumber varchar(100) NOT NULL,
+	Birthday date NOT NULL,
+	Point integer NULL DEFAULT 0,
+	AccumulatedPoint integer NULL DEFAULT 0,
 
     CONSTRAINT PK_MemberInfo PRIMARY KEY (ID)
 );
@@ -293,7 +293,7 @@ CREATE TABLE Reservation_Member (
 
 CREATE TABLE MovieBranch (
 	Branch varchar(50) NOT NULL,     
-	Name varchar(50) NULL,
+	Name varchar(50) NOT NULL,
 	EachNumber integer NOT NULL,                     
 	ProductNumber varchar(50) NOT NULL,                 
 
